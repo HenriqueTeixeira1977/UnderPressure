@@ -3,9 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    font-family: 10rem;
-    font-weight: 500;
+body{
+    background-color: green;
+    background: url(/img/bghome_mbl1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1, h2, h3{
+    font-family: cooper, sans-serif;
+    font-weight: 900;
     font-style: normal;
     color: orangered;
 }
+.container{background: rgba(102, 51, 153, 0.783);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+.container img{
+    width: 10%;
+    max-width: 400px;
+}
+.container h2{
+    font-size: 1rem;
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+}
+.container h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+.container h1{
+    font-size: 1.1rem;
+    text-shadow: 5px 5px 5px black;
+}
+.container p{
+    color: white;
+}
+
