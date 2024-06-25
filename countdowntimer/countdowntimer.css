@@ -9,15 +9,14 @@
     transition: all .3s ease;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-body{
-    background-color: green;
+body{background-color: green;
     background: url(/img/bghome_dsktp1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 1000px;
 }
 h1, h2, h3{
     font-family: cooper, sans-serif;
@@ -25,45 +24,46 @@ h1, h2, h3{
     font-style: normal;
     color: orangered;
 }
-.container{background: rgba(0, 0, 0, 0.364);
+.container{background: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 90%;
-    height: 90vh;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    padding: 5px;
+    padding: 30px;
     text-align: center;
-    border-radius: 20px;    
 }
 .container img{
     width: 60%;
     max-width: 150px;
 }
 .container h1{
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: .7;
     color: blue;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 .container h2{
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.537);
 }
 .container h3{
-    font-size: 1.7rem;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    line-height: .7;
     color: orangered;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.537);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .container p{
+    font-size: 1.1rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
 }
-
 /*  *****  SECTION COUNTERDOWNTIMER  *****  */
-
-.countdown{background: rgba(255, 0, 0, 0);
+.countdown{background: rgba(150, 33, 33, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,77 +82,161 @@ h1, h2, h3{
 }
 .countdown .time h2{background: rgba(255, 255, 0, 0);
     font-size: 3rem;
+    line-height: 1;
+
     color: white;
 }
 .countdown .time small{background: rgba(255, 0, 0, 0);
     font-size: .8rem;
     font-weight: 500;
+    line-height: 1;
+
     color: orangered;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.537);
 }
-/*  *****  BOTAO  *****  */
-.botao {
-    background: rgba(255, 0, 0, 0);
+/*  *****  BUTTONS  *****  */
+.button {background: rgba(4, 255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+.button a{background: orangered;
+    width: 300px;
+    margin: 5px;
+    padding: 20px 50px;
+    font-family: cooper, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+}
+.button a:hover{    
+    background: blue;
+    transform: translateY(-3px);
+}
+/*  ***** SOCIAL MEDIA *****  */
+.social-media{background: rgba(255, 255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 80px;
+}
+.social-media a{background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: orangered;    
+    border-radius: 50px;
+    border: orangered solid 3px;
+
+
+}
+/*  *****  FOOTER  *****  */
+footer{background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+footer .footer{background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100px;
-}
-.botao a{background: orangered;
-    padding: 10px 50px;
-    font-family: cooper, sans-serif;
-    font-size: 2rem;
+    margin: 0px;
+    padding: 20px;
     color: white;
-    border-radius: 5px;
+    font-weight: 300;    
 }
-.botao a:hover{    
-    background: blue;
-    transform: translateY(-3px);
+footer .footer p{
+    margin: 7px;
+}
+footer .footer span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: orangered;
+    text-shadow: 1px 1px 1px black;
+    
 }
 
-/*  TABLETS (horizontal) - NOTEBOOKS */
-@media screen and (min-width: 1024px) and (max-width: 2560px){
-    body{
-        background: url(/img/bghome_dsktp1.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;        
-        display: flex;
+@media screen and (min-width: 481px) and (max-width: 768px){
+    body{      
         height: 100vh;
     }
-    .container{background: rgba(0, 0, 0, 0.185);
+    .container{background: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
         border-radius: 0;
     }
     .container h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .container h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
     .container h3{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .container p{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: white;
     }
-
+/*  *****  COUNTDOWN  *****  */
     .countdown {background-color: rgba(0, 128, 0, 0);
         max-width: 600px;
         height: 25%;
     }
     .countdown .time h2{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .countdown .time small{
         font-size: 1.2rem;
         font-weight: 1;
-        color: white;
+        color: orange;
     }
+    .button {
+        flex-direction: row-reverse;
+    }
+/*  *****  SOCIAL MEDIA  *****  */
+    .social-media a:hover {
+        background: orangered;
+        color: aliceblue;
+        transform: translateY(-3px);
+
+    }
+/*  *****  FOOTER  *****  */
+    footer{background: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    footer .footer {background: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 90%;
+        height: 100px;
+    }
+
+}
+
+
+/*  TABLETS (horizontal) - NOTEBOOKS */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
 
 
 }
