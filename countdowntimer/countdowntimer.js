@@ -1,4 +1,4 @@
-const launchDate = new Date("2024-07-25T00:00:00"); //  aqui posso alterar o data final;
+const launchDate = new Date("2024-08-10T00:00:00"); //  aqui posso alterar o data final;
 
 function countdown() {
   const currentDate = new Date();
