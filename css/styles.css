@@ -12,15 +12,54 @@
     }
 }
 body{
-    background: rgba(2, 114, 0, 0.461);
+    background: rgb(255, 3, 3);
 }
-header{
-    background: rgb(255, 251, 0);
+header{background: rgb(205, 205, 205);
+    width: 100%;
+    height: 80px;
+    position: fixed;
 }
-main{
-    background: rgb(0, 0, 255);
+main{background: rgb(103, 103, 103);
+}
+/*  **********  SECTION HOME(Topo)  *********  */
+main .home{background: greenyellow;
     height: 100vh;
+    padding-top:100px;
 }
-footer{
-    background: rgb(229, 229, 229);
+/*  **********  SECTION SERVICES  *********  */
+main .services{background: yellow;
+    height: 100vh;
+    padding-top:100px;
+}
+/*  **********  SECTION WORKS  *********  */
+main .works{background: blue;
+    height: 100vh;
+    padding-top:100px;
+}
+/*  **********  SECTION GALERY  *********  */
+main .galery{background: whitesmoke;
+    height: 100vh;
+    padding-top:100px;
+}
+/*  **********  SECTION REVIEWS  *********  */
+main .reviews{background: green;
+    height: 100vh;
+    padding-top:100px;
+
+}
+/*  **********  SECTION ABOUT US  *********  */
+main .about{background: yellow;
+    height: 100vh;
+    padding-top:100px;
+
+}
+/*  **********  SECTION CONTACTS  *********  */
+main .contacts{background: blue;
+    height: 100vh;
+    padding-top:100px;
+}
+/*  **********  SECTION FOOTER  *********  */
+footer{background: white;
+    text-align: center;
+    color: black;
 }
