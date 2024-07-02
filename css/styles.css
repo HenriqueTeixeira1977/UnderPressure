@@ -14,6 +14,8 @@
 body{
     background: rgb(255, 3, 3);
 }
+
+
 header{
     background: #00000000; 
     z-index: 999;
@@ -31,17 +33,17 @@ header{
 
 header nav{
     position: fixed;
-    background: #0400dafa;
+    background: #000c77f3;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    min-width: 50%;
+    min-width: 100%;
     height: 100vh;
     top: 0;
     right: -110%;
     padding: 80px 20px;
-    transition:  0.5s;
+    transition:  0.9s;
     transition-property: right;
 }
 header nav a {
@@ -58,11 +60,7 @@ header nav a:hover {
 header .button {
     display: none;
 }
-header nav .btn{
-    display: block;
-    font-size: 2rem;
-    color: #ffffff;
-}
+
 header .logo {
     display: flex;
     align-items: center;
@@ -71,45 +69,112 @@ header .logo {
     height: 60px;    
 }
 header .logo a{
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.3rem;
+    color: orangered;
 }
 header .logo a img{
     display: none;
     max-width: 70%;
     margin: 30px 0;
-    color: white;
+    color: rgb(141, 70, 70);
+}
+
+header .btn{
+    display: block;
+    font-size: 1.2rem;
+    color: orangered;
 }
 /*  ***** Menu Sticky *****  */
 header.sticky{
     height: 60px;
-    background: #000c76;
-    box-shadow: 0px 5px 5px 0px #00000077;
+    background: #000c77;
+    box-shadow: 0px 5px 5px 0px #00000063;
     border-bottom: orangered solid 5px;
     transition: all .2s ease;
 }
-header.sticky .btn{
-    color: #ffffff;
+header.sticky .logo a {
+    color: white;
+}
+header.sticky .menu-btn{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
 }
 header .menu.active{
     right: 0;
 }
+header .menu .menu-btn{
+    display: none;
+}
 header .menu .close-btn{
-    color: #FFFFFF;
+    color: #ffffff;
     position: absolute;
     top: 0;
-    left: 83%;
-    margin: 21px 0px 0px 0px;
+    left: 85%;
+    margin: 10% 0px 0px 0px;
 }
 
 /*  **********  MAIN  *********  */
 
-main{background: rgb(103, 103, 103);
+main{background: rgb(255, 255, 255);
 }
 /*  **********  SECTION HOME(Topo)  *********  */
-main .home{background: greenyellow;
-    height: 100vh;
+main .home{background: rgba(172, 255, 47, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 5%;
     padding-top:100px;
+    height: 100vh;
+}
+main .home .container .txt{background: rgba(255, 0, 0, 0);
+    height: 300px;
+    padding: 0px;
+}
+main .home .container .txt h1{
+    font-size: 2.8rem;
+}
+main .home .container .txt h2{
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+main .home .container .txt p{
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+main .home .container .btn-talk{background: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    text-align: center;
+}main .home .container .btn-talk a{ background: orangered;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+main .home .container .btn-send{background: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    text-align: center;
+}
+main .home .container .btn-send a{ background: orangered;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
 }
 /*  **********  SECTION SERVICES  *********  */
 main .services{background: yellow;
