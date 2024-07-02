@@ -10,6 +10,19 @@
         transition: all .3s ease;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background: #bfbfbf;
+    }
+    ::-webkit-scrollbar-track:hover{
+        background: #ffffff85;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: rgb(4, 0, 255);
+        border-radius: 20px;
+    }
     
     body{
         background: rgb(255, 3, 3);
@@ -31,7 +44,7 @@
         margin: auto;
         padding: 0 5%;
     }
-    header nav{background: #000831e7;
+    header nav{background: #000831a7;
         backdrop-filter: blur(10px);
         position: fixed;
         display: flex;
@@ -46,7 +59,7 @@
         transition-property: right;
     }
     header nav a {background: rgba(0, 0, 0, 0);
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 20px 0;
         padding: 10px;
         color: orangered;
@@ -126,6 +139,9 @@
         padding: 0 5%;
         padding-top:100px;
         height: 100vh;
+    }
+    main .home .container img{
+        width: 50%;
     }
     main .home .container .txt{background: rgba(255, 0, 0, 0);
         height: 300px;
