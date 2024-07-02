@@ -10,206 +10,208 @@
         transition: all .3s ease;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-}
-body{
-    background: rgb(255, 3, 3);
-}
+    
+    body{
+        background: rgb(255, 3, 3);
+    }
 
+    /*  ***** HEADER *****  */
 
-header{
-    background: #00000000; 
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    margin: auto;
-    padding: 0 5%;
-}
+    header{
+        background: #d7000000; 
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        margin: auto;
+        padding: 0 5%;
+    }
+    header nav{background: #000831e7;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -110%;
+        padding: 80px 0px;
+        transition:  0.9s;
+        transition-property: right;
+    }
+    header nav a {background: rgba(0, 0, 0, 0);
+        font-size: 2rem;
+        margin: 20px 0;
+        padding: 10px;
+        color: orangered;
+        font-weight: 500;
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);
+        border-bottom: rgb(255, 255, 255) solid 1px;
+        box-shadow: 5px 5px 5px #00000071;
+    }
+    header nav a:hover {
+        color: #ffffff;
+    }
+    header .button {
+        display: none;
+    }
+    header .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 70%;
+        height: 60px;    
+    }
+    header .logo a{
+        font-size: 1.3rem;
+        color: orangered;
+    }
+    header .logo a img{
+        display: none;
+        max-width: 70%;
+        margin: 30px 0;
+        color: rgb(141, 70, 70);
+    }
+    header .btn{
+        display: block;
+        font-size: 1.3rem;
+        color: rgb(255, 68, 0);
+    }
+    /*  ***** Menu Sticky *****  */
+    header.sticky{
+        height: 60px;
+        background: #000c77;
+        box-shadow: 0px 5px 5px 0px #00000063;
+        border-bottom: orangered solid 5px;
+        transition: all .2s ease;
+    }
+    header.sticky .logo a {
+        color: white;
+    }
+    header.sticky .menu-btn{
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+    }
+    header .menu.active{
+        right: 0;
+    }
+    header .menu .menu-btn{
+        display: none;
+    }
+    header .menu .close-btn{
+        color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 85%;
+        margin: 10% 0px 0px 0px;
+    }
 
-header nav{
-    position: fixed;
-    background: #000c77f3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-width: 100%;
-    height: 100vh;
-    top: 0;
-    right: -110%;
-    padding: 80px 0px;
-    transition:  0.9s;
-    transition-property: right;
-}
-header nav a {
-    font-size: 3rem;
-    margin: 20px 0;
-    padding: 0 15px;
-    color: orangered;
-    font-weight: 500;
+    /*  **********  MAIN  *********  */
 
-    border-bottom: rgb(255, 255, 255) solid 1px;
-}
-header nav a:hover {
-    color: #ffffff;
-}
-header .button {
-    display: none;
-}
+    main{background: rgb(255, 255, 255);
+    }
+    /*  **********  SECTION HOME(Topo)  *********  */
+    main .home{background: rgba(172, 255, 47, 0);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 5%;
+        padding-top:100px;
+        height: 100vh;
+    }
+    main .home .container .txt{background: rgba(255, 0, 0, 0);
+        height: 300px;
+        padding: 0px;
+    }
+    main .home .container .txt h1{
+        font-size: 2.8rem;
+    }
+    main .home .container .txt h2{
+        font-size: 1.7rem;
+        margin: 10px 0;
+    }
+    main .home .container .txt p{
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+    main .home .container .btn-talk{background: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        margin-top: 5px;
+        text-align: center;
 
-header .logo {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 70%;
-    height: 60px;    
-}
-header .logo a{
-    font-size: 1.3rem;
-    color: orangered;
-}
-header .logo a img{
-    display: none;
-    max-width: 70%;
-    margin: 30px 0;
-    color: rgb(141, 70, 70);
-}
+    }
+    main .home .container .btn-talk a{ background: orangered;
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 7px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: white;
+    }
+    main .home .container .btn-send{background: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    main .home .container .btn-send a{ background: orangered;
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 7px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: white;
+    }
+    /*  **********  SECTION SERVICES  *********  */
+    main .services{background: yellow;
+        height: 100vh;
+        padding-top:100px;
+    }
+    /*  **********  SECTION WORKS  *********  */
+    main .works{background: blue;
+        height: 100vh;
+        padding-top:100px;
+    }
+    /*  **********  SECTION GALERY  *********  */
+    main .galery{background: whitesmoke;
+        height: 100vh;
+        padding-top:100px;
+    }
+    /*  **********  SECTION REVIEWS  *********  */
+    main .reviews{background: green;
+        height: 100vh;
+        padding-top:100px;
 
-header .btn{
-    display: block;
-    font-size: 1.2rem;
-    color: orangered;
-}
-/*  ***** Menu Sticky *****  */
-header.sticky{
-    height: 60px;
-    background: #000c77;
-    box-shadow: 0px 5px 5px 0px #00000063;
-    border-bottom: orangered solid 5px;
-    transition: all .2s ease;
-}
-header.sticky .logo a {
-    color: white;
-}
-header.sticky .menu-btn{
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-}
-header .menu.active{
-    right: 0;
-}
-header .menu .menu-btn{
-    display: none;
-}
-header .menu .close-btn{
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 85%;
-    margin: 10% 0px 0px 0px;
-}
+    }
+    /*  **********  SECTION ABOUT US  *********  */
+    main .about{background: yellow;
+        height: 100vh;
+        padding-top:100px;
 
-/*  **********  MAIN  *********  */
-
-main{background: rgb(255, 255, 255);
-}
-/*  **********  SECTION HOME(Topo)  *********  */
-main .home{background: rgba(172, 255, 47, 0);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 0;
-    padding: 0 5%;
-    padding-top:100px;
-    height: 100vh;
-}
-main .home .container .txt{background: rgba(255, 0, 0, 0);
-    height: 300px;
-    padding: 0px;
-}
-main .home .container .txt h1{
-    font-size: 2.8rem;
-}
-main .home .container .txt h2{
-    font-size: 1.7rem;
-    margin: 10px 0;
-}
-main .home .container .txt p{
-    font-size: 1.3rem;
-    font-weight: 100;
-}
-main .home .container .btn-talk{background: rgba(0, 0, 255, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    margin-top: 5px;
-    text-align: center;
-}main .home .container .btn-talk a{ background: orangered;
-    width: 100%;
-    padding: 20px 0;
-    border-radius: 7px;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: white;
-}
-main .home .container .btn-send{background: rgba(0, 0, 255, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    margin-top: 5px;
-    text-align: center;
-}
-main .home .container .btn-send a{ background: orangered;
-    width: 100%;
-    padding: 20px 0;
-    border-radius: 7px;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: white;
-}
-/*  **********  SECTION SERVICES  *********  */
-main .services{background: yellow;
-    height: 100vh;
-    padding-top:100px;
-}
-/*  **********  SECTION WORKS  *********  */
-main .works{background: blue;
-    height: 100vh;
-    padding-top:100px;
-}
-/*  **********  SECTION GALERY  *********  */
-main .galery{background: whitesmoke;
-    height: 100vh;
-    padding-top:100px;
-}
-/*  **********  SECTION REVIEWS  *********  */
-main .reviews{background: green;
-    height: 100vh;
-    padding-top:100px;
-
-}
-/*  **********  SECTION ABOUT US  *********  */
-main .about{background: yellow;
-    height: 100vh;
-    padding-top:100px;
-
-}
-/*  **********  SECTION CONTACTS  *********  */
-main .contacts{background: blue;
-    height: 100vh;
-    padding-top:100px;
-}
-/*  **********  SECTION FOOTER  *********  */
-footer{background: white;
-    text-align: center;
-    color: black;
+    }
+    /*  **********  SECTION CONTACTS  *********  */
+    main .contacts{background: blue;
+        height: 100vh;
+        padding-top:100px;
+    }
+    /*  **********  SECTION FOOTER  *********  */
+    footer{background: white;
+        text-align: center;
+        color: black;
+    }
 }
