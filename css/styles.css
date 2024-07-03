@@ -7,7 +7,7 @@
         list-style: none;
         line-height: 1;
         scroll-behavior: smooth;
-        transition: all .3s ease;
+        transition: all .5s ease;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     ::-webkit-scrollbar{
@@ -23,15 +23,30 @@
         background: rgb(4, 0, 255);
         border-radius: 20px;
     }
+    :root{
+    /*  ***** Colors *****  */    
+        --blue: blue;
+        --orange: orangered;
+        --green: #29A71A;
+        --black: black;
+        --white: white;  
+    /*  ***** Fonts *****  */    
+        --fontam6: clamp(1.6rem, 1.5rem + 3vw, 8rem);
+        --fontam5: clamp(1.5rem, 1.1rem + 2.3vw, 4.1rem);
+        --fontam4: clamp(1.3rem, 1rem + 2vw, 4rem);
+        --fontam3: clamp(1.3rem, 1.25rem + 1.5vw, 3rem);
+        --fontam2: clamp(1.2rem, 1.3rem + 1.3vw, 2rem);
+        --fontam1: clamp(1rem, 1rem + 1vw, 1.1rem);
+    /*  ***** Shadows *****  */    
+        --elements-shadows: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        --texts-shadows: 5px 10px 5px rgba(0, 0, 0, 0.7);
+    }
     
-    body{
-        background: rgb(255, 3, 3);
+    body{background: rgb(231, 231, 231);
     }
 
     /*  ***** HEADER *****  */
-
-    header{
-        background: #d7000000; 
+    header{background: #d7000000; 
         z-index: 999;
         position: fixed;
         top: 0;
@@ -59,7 +74,7 @@
         transition-property: right;
     }
     header nav a {background: rgba(0, 0, 0, 0);
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 20px 0;
         padding: 10px;
         color: orangered;
@@ -82,8 +97,9 @@
         height: 60px;    
     }
     header .logo a{
-        font-size: 1.3rem;
-        color: orangered;
+        font-size: 1.1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     }
     header .logo a img{
         display: none;
@@ -93,8 +109,8 @@
     }
     header .btn{
         display: block;
-        font-size: 1.3rem;
-        color: rgb(255, 68, 0);
+        font-size: 1.5rem;
+        color: white;
     }
     /*  ***** Menu Sticky *****  */
     header.sticky{
@@ -127,10 +143,12 @@
 
     /*  **********  MAIN  *********  */
 
-    main{background: rgb(255, 255, 255);
+    main{background: rgba(4, 0, 255, 0);
     }
     /*  **********  SECTION HOME(Topo)  *********  */
-    main .home{background: rgba(172, 255, 47, 0);
+    main .home{
+        background: rgb(255,128,0);
+        background: linear-gradient(-45deg, orangered 16%, blue 64%);
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -141,22 +159,32 @@
         height: 100vh;
     }
     main .home .container img{
-        width: 50%;
+        width: 30%;
     }
     main .home .container .txt{background: rgba(255, 0, 0, 0);
-        height: 300px;
-        padding: 0px;
+        padding: 15px 0;
+        color: white;
     }
     main .home .container .txt h1{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        text-shadow: var(--texts-shadows);
     }
+    main .home .container .txt h1 span{
+        color: orangered;
+    }
+
     main .home .container .txt h2{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin: 10px 0;
+        text-shadow: var(--texts-shadows);
+
     }
     main .home .container .txt p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 100;
+        line-height: 1.5;
+        text-shadow: var(--texts-shadows);
+
     }
     main .home .container .btn-talk{background: rgba(0, 0, 255, 0);
         display: flex;
@@ -175,6 +203,7 @@
         font-size: 1.3rem;
         font-weight: 500;
         color: white;
+        box-shadow: var(--elements-shadows);
     }
     main .home .container .btn-send{background: rgba(0, 0, 255, 0);
         display: flex;
@@ -192,6 +221,7 @@
         font-size: 1.3rem;
         font-weight: 500;
         color: white;
+        box-shadow: var(--elements-shadows);
     }
     /*  **********  SECTION SERVICES  *********  */
     main .services{background: yellow;
