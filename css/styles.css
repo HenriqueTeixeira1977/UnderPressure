@@ -7,7 +7,7 @@
         list-style: none;
         line-height: 1;
         scroll-behavior: smooth;
-        transition: all .5s ease;
+        transition: all .2s ease;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     ::-webkit-scrollbar{
@@ -89,12 +89,14 @@
     header .button {
         display: none;
     }
-    header .logo {
+    header .logo {background-color: rgba(255, 0, 0, 0);
         display: flex;
-        align-items: center;
-        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
         width: 70%;
-        height: 60px;    
+        height: 60px;   
+        color: var(--white); 
     }
     header .logo a{
         font-size: 1.1rem;
@@ -106,6 +108,13 @@
         max-width: 70%;
         margin: 30px 0;
         color: rgb(141, 70, 70);
+    }
+    header .logo h1{
+        font-size: 1.5rem;
+        color: var(--orange);
+    }
+    header .logo h2{
+        font-size: 1rem;
     }
     header .btn{
         display: block;
@@ -122,6 +131,14 @@
     }
     header.sticky .logo a {
         color: white;
+    }
+    header.sticky .logo a h1{
+        font-size: 1.2rem;
+        color: var(--white);
+    }
+    header.sticky .logo a h2{
+        font-size: .8rem;
+        color: var(--orange);
     }
     header.sticky .menu-btn{
         color: rgb(255, 255, 255);
@@ -142,15 +159,23 @@
     }
 
     /*  **********  MAIN  *********  */
-
     main{background: rgba(4, 0, 255, 0);
     }
+
     /*  **********  SECTION HOME(Topo)  *********  */
     main .home{
-        background: rgb(255,128,0);
+        background-image:
+            linear-gradient(-45deg, rgba(98, 26, 0, 0.75) 10%, rgba(0, 0, 77, 0.75) 64%),
+            url(../img/bghome_mbl.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*
+        background: rgb(255, 128, 0);
         background: linear-gradient(-45deg, orangered 16%, blue 64%);
+        */
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
         margin: 0;
@@ -162,7 +187,7 @@
         width: 30%;
     }
     main .home .container .txt{background: rgba(255, 0, 0, 0);
-        padding: 15px 0;
+        padding: 5px 0;
         color: white;
     }
     main .home .container .txt h1{
@@ -172,7 +197,6 @@
     main .home .container .txt h1 span{
         color: orangered;
     }
-
     main .home .container .txt h2{
         font-size: 1.5rem;
         margin: 10px 0;
@@ -205,6 +229,10 @@
         color: white;
         box-shadow: var(--elements-shadows);
     }
+    main .home .container .btn-talk a:hover{
+        background-color: var(--blue);
+        transform: translateY(-3px);
+    }
     main .home .container .btn-send{background: rgba(0, 0, 255, 0);
         display: flex;
         justify-content: center;
@@ -223,6 +251,11 @@
         color: white;
         box-shadow: var(--elements-shadows);
     }
+    main .home .container .btn-send a:hover{
+        background-color: var(--blue);
+        transform: translateY(-3px);
+    }
+
     /*  **********  SECTION SERVICES  *********  */
     main .services{background: yellow;
         height: 100vh;
