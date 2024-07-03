@@ -204,11 +204,11 @@
 
     }
     main .home .container .txt p{
+        margin: 50px 0;
         font-size: 1.2rem;
         font-weight: 100;
         line-height: 1.5;
         text-shadow: var(--texts-shadows);
-
     }
     main .home .container .btn-talk{background: rgba(0, 0, 255, 0);
         display: flex;
