@@ -261,41 +261,103 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        /*height: 100vh;*/
         padding-top:100px;
     }
-    main .services .container{background: red;
+    main .services .container{background: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
-        /*flex-direction: column;*/
         flex-wrap: wrap;
         width: 97%;
         height: 97%;
         margin: 20px;
-        padding: 30px;
+        padding: 0px;
     }
     main .services h2{
-        font-size: 3rem;
-        text-align: center;
+        font-size: 4rem;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
-    main .services .card{background-color: #ffffff;
-        
+    main .services p{background-color: rgba(255, 0, 0, 0);
+        text-align: center;
+        width: 90%;
+    }
+    main .services .container .card{background-color: #ffffff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
         width: 350px;
-        height: 300px;
-        margin: 5px;
-        padding: 20px;
-        border-radius: 20px;
+        height: 400px;
+        margin: 10px;
+        padding: 30px 20px;
+        position: relative;
+        transition: 0.5s all ease-in-out;
+        border-radius: 10px;
     }
-    main .services .card h3{
-        font-size: 1.5rem;
-    
+    main .services .container .card:hover{
+        transform: translateY(-10px);
     }
-    main .services .card p{
+    main .services .container .card::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(13, 63, 26, 0.3), rgb(255, 128, 24));
+        z-index: 2;
+        opacity: 0;
+        transition:  0.5s all;
+        border-radius: 10px;
+    }
+    main .services .container .card:hover::before{
+        opacity: 1;
+    }
+    main .services .container .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+    main  .services .container .card .info {
+        position: relative;
+        color: #FFFFFF;
+        z-index: 3;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s all
+    }
+    main .services .container .card:hover .info{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    main .services .container .card .info h3{
+        font-size: 2rem;
+    }
+    main .services .container .card .info p{
+
         margin: 20px 0;
-        font-size: 1.3rem;
-        
+        font-size: 1.3rem;   
+        text-align: left;     
+    }
+    main .services .container .card .info a{
+        background: #FFFFFF;
+        padding: 0.5rem 3rem;
+        color: #000000;
+        font-size: .9rem;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: .4s ease-in-out;
+    }
+    main .services .container .card .info a:hover{
+        background: var(--green);
+        color: #FFFFFF;
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
 
     /*  **********  SECTION WORKS  *********  */
@@ -312,7 +374,6 @@
     main .reviews{background: green;
         height: 100vh;
         padding-top:100px;
-
     }
     /*  **********  SECTION ABOUT US  *********  */
     main .about{background: yellow;
