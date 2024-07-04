@@ -257,10 +257,47 @@
     }
 
     /*  **********  SECTION SERVICES  *********  */
-    main .services{background: yellow;
-        height: 100vh;
+    main .services{background: rgba(255, 255, 0, 0);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /*height: 100vh;*/
         padding-top:100px;
     }
+    main .services .container{background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        width: 97%;
+        height: 97%;
+        margin: 20px;
+        padding: 30px;
+    }
+    main .services h2{
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    main .services .card{background-color: #ffffff;
+        
+        width: 350px;
+        height: 300px;
+        margin: 5px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    main .services .card h3{
+        font-size: 1.5rem;
+    
+    }
+    main .services .card p{
+        margin: 20px 0;
+        font-size: 1.3rem;
+        
+    }
+
     /*  **********  SECTION WORKS  *********  */
     main .works{background: blue;
         height: 100vh;
