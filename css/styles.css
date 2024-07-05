@@ -42,7 +42,7 @@
         --texts-shadows: 5px 10px 5px rgba(0, 0, 0, 0.7);
     }
     
-    body{background: rgb(231, 231, 231);
+    body{background: rgb(255, 0, 0);
     }
 
     /*  ***** HEADER *****  */
@@ -201,7 +201,6 @@
         font-size: 1.5rem;
         margin: 10px 0;
         text-shadow: var(--texts-shadows);
-
     }
     main .home .container .txt p{
         margin: 50px 0;
@@ -257,13 +256,13 @@
     }
 
     /*  **********  SECTION SERVICES  *********  */
-    main .services{background: rgba(255, 255, 0, 0);
+    main .services{background: rgb(255, 255, 255);
         display: flex;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
     }
-    main .services .container{background: rgba(255, 0, 0, 0);
+    main .services .container{background: rgba(255, 255, 255, 0);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -275,11 +274,14 @@
     }
     main .services h2{
         font-size: 4rem;
+        color: var(--blue);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
     main .services p{background-color: rgba(255, 0, 0, 0);
-        text-align: center;
         width: 90%;
+        margin-top: 10px;
+        text-align: center;
+
     }
     main .services .container .card{background-color: #ffffff;
         display: flex;
@@ -362,33 +364,108 @@
 
     /*  **********  SECTION WORKS  *********  */
     main .works{background: blue;
+        display: none;
         height: 100vh;
         padding-top:100px;
     }
     /*  **********  SECTION GALERY  *********  */
     main .galery{background: whitesmoke;
+        display: none;
         height: 100vh;
         padding-top:100px;
     }
     /*  **********  SECTION REVIEWS  *********  */
     main .reviews{background: green;
+        display: none;
         height: 100vh;
         padding-top:100px;
     }
     /*  **********  SECTION ABOUT US  *********  */
     main .about{background: yellow;
+        display: none;
         height: 100vh;
         padding-top:100px;
 
     }
     /*  **********  SECTION CONTACTS  *********  */
     main .contacts{background: blue;
+        display: none;
         height: 100vh;
         padding-top:100px;
     }
     /*  **********  SECTION FOOTER  *********  */
     footer{background: white;
+        background-image: 
+            linear-gradient(-45deg, rgba(98, 26, 0, 0.386) 16%, rgba(0, 0, 130, 0.84) 64%),
+            url(../img/bghome_dsktp1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-size: 1rem;
         text-align: center;
         color: black;
+    }
+    footer .container{background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: auto;
+        padding: 20px 0;
+        width: 90%;       
+        text-align: left;
+    }
+    footer .container .box{background-color: rgba(0, 5, 140, 0.313);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    footer .container .box h3{
+        font-size: 2rem;
+        color: var(--white);
+        margin-bottom: 20px;
+    }
+    footer .container .box a{
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-weight: 5;
+        color: var(--white);
+    }
+    footer .container .box i{
+        margin: 0 10px;
+        color: orangered;
+    }
+
+    footer .container .credits{background: rgba(172, 255, 47, 0);
+        margin-top: 20px;
+        padding: 40px 0;
+        font-size: 1rem;
+        color: var(--white);
+        text-align: center;
+    }
+    footer .container .credits h3{
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: orangered;
+    }
+    footer .container .credits p{
+        margin: 10px;
+        line-height: .6;
+    }
+    footer .container .credits .dev{background-color: rgba(255, 255, 0, 0);
+        margin: 30px 0;
+        font-size: 1rem;
+    }
+    footer .container .credits .dev p{
+        font-size: 1.1rem;
+    }
+    footer .container .credits .dev a{
+        font-weight: 500;
+        color: orangered;
     }
 }
