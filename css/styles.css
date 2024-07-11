@@ -182,7 +182,7 @@
         background: rgb(255, 128, 0);
         background: linear-gradient(-45deg, orangered 16%, blue 64%);
         */
-        display: flex;
+        display: none;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
@@ -269,7 +269,7 @@
 
     /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
@@ -383,6 +383,12 @@
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
 
+
+
+
+
+
+
     /*  **********  SECTION WORKS  *********  */
     main .works{background: blue;
         display: none;
@@ -401,13 +407,53 @@
         height: 100vh;
         padding-top:100px;
     }
+
+
+
+
+
+
+
     /*  **********  SECTION ABOUT US  *********  */
     main .about{background: yellow;
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         height: 100vh;
         padding-top:100px;
-
     }
+    main .about h2{
+        font-size: 3rem;
+    }
+    main .about .container{background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 90%;
+        padding: 1rem;
+    }
+    main .about .container .about-txt{background-color: blue;
+        
+    }
+    main .about .container .about-txt h1{
+        font-size: 3rem;
+    }
+    main .about .container .about-txt h2{
+        font-size: 1.5rem;
+    }
+
+    main .about .container .about-img img{background-color: green;
+        width: 50%;
+    }
+
+
+
+
+
+    
     /*  **********  SECTION CONTACTS  *********  */
     main .contacts{background: rgb(232, 232, 232);
         display: flex;
