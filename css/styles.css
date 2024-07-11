@@ -44,7 +44,7 @@
     body{background: rgb(255, 255, 255);
     }
 
-    /*  ***** HEADER *****  */
+/*  ***** HEADER *****  */
     header{background: #d7000000; 
         z-index: 999;
         position: fixed;
@@ -120,7 +120,7 @@
         font-size: 2rem;
         color: white;
     }
-    /*  ***** Menu Sticky *****  */
+/*  ***** Menu Sticky *****  */
     header.sticky{
         display: flex;
         justify-content: space-around;
@@ -166,11 +166,11 @@
         margin: 10% 0px 0px 0px;
     }
 
-    /*  **********  MAIN  *********  */
+/*  **********  MAIN  *********  */
     main{background: rgba(4, 0, 255, 0);
     }
 
-    /*  **********  SECTION HOME(Topo)  *********  */
+/*  **********  SECTION HOME(Topo)  *********  */
     main .home{
         background-image:
             linear-gradient(-45deg, rgba(98, 26, 0, 0.75) 10%, rgba(0, 0, 77, 0.75) 64%),
@@ -178,11 +178,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        /*
-        background: rgb(255, 128, 0);
-        background: linear-gradient(-45deg, orangered 16%, blue 64%);
-        */
-        display: none;
+        display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
@@ -267,9 +263,9 @@
         transform: translateY(-3px);
     }
 
-    /*  **********  SECTION SERVICES  *********  */
+/*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
@@ -389,19 +385,19 @@
 
 
 
-    /*  **********  SECTION WORKS  *********  */
+/*  **********  SECTION WORKS  *********  */
     main .works{background: blue;
         display: none;
         height: 100vh;
         padding-top:100px;
     }
-    /*  **********  SECTION GALERY  *********  */
+/*  **********  SECTION GALERY  *********  */
     main .galery{background: whitesmoke;
         display: none;
         height: 100vh;
         padding-top:100px;
     }
-    /*  **********  SECTION REVIEWS  *********  */
+/*  **********  SECTION REVIEWS  *********  */
     main .reviews{background: green;
         display: none;
         height: 100vh;
@@ -414,8 +410,8 @@
 
 
 
-    /*  **********  SECTION ABOUT US  *********  */
-    main .about{background: yellow;
+/*  **********  SECTION ABOUT US  *********  */
+    main .about{background: rgba(255, 255, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -424,28 +420,39 @@
         padding-top:100px;
     }
     main .about h2{
-        font-size: 3rem;
+        font-size: 4rem;
+        color: rgb(0, 0, 77);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
-    main .about .container{background-color: red;
+    main .about .container{background-color: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        width: 90%;
+        width: 95%;
         height: 90%;
-        padding: 1rem;
+        padding: 1rem 0;
     }
-    main .about .container .about-txt{background-color: blue;
-        
+    main .about .container .about-txt{background-color: rgba(0, 0, 255, 0);
+        height: 50%;
     }
     main .about .container .about-txt h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     main .about .container .about-txt h2{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-
-    main .about .container .about-img img{background-color: green;
+    main .about .container .about-txt p{
+        margin: 2rem 0;
+    }
+    main .about .container .about-txt a{
+        background-color: var(--orange);
+        padding: 10px 3rem;
+        font-size: 1.5rem;
+        color: var(--white);
+        border-radius: 10px;
+    }
+    main .about .container .about-img img{background-color: rgba(0, 128, 0, 0);
         width: 50%;
     }
 
@@ -453,19 +460,22 @@
 
 
 
+
     
-    /*  **********  SECTION CONTACTS  *********  */
+/*  **********  SECTION CONTACTS  *********  */
     main .contacts{background: rgb(232, 232, 232);
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         height: 100vh;
         margin: auto;
+        padding-top: 70px;
         text-align: center;
     }
     main .contacts h2{
-        font-size: 3rem;
+        font-size: 4rem;
+        color: rgb(0, 0, 77);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
     main .contacts .container{background-color: rgba(172, 255, 47, 0);
         display: flex;
@@ -473,22 +483,22 @@
         align-items: center;
         flex-direction: column;
         width: 95%;
+        height: 90%;
     }
     main .contacts .container .ctt-links{background-color: rgba(255, 255, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 95%;
+        width: 100%;
     }
-    main .contacts .ctt-links .box{background-color: rgba(255, 0, 0, 0);
+    main .contacts .ctt-links .box{background-color: rgba(0, 255, 200, 0);
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        height: 250px;
-        padding: 50px 0; 
+        height: 200px;
         text-align: start;
     }
     main .contacts .ctt-links .box i{
@@ -500,13 +510,19 @@
         color: var(--blue);
         line-height: 2;
     }
-    main .contacts .iframe{
+    main .contacts .iframe{background-color: green;
         display: flex;
-        width: 95%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
-    
-
-    /*  **********  SECTION FOOTER  *********  */
+    main .contacts .iframe iframe{background-color: rgb(15, 0, 128);
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+/*  **********  SECTION FOOTER  *********  */
     footer{background: white;
         background-image: 
             linear-gradient(-45deg, rgba(98, 26, 0, 0.613) 16%, rgba(0, 0, 77, 0.9) 64%),
