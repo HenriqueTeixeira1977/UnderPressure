@@ -43,7 +43,6 @@
     }    
     body{background: rgb(255, 255, 255);
     }
-
 /*  ***** HEADER *****  */
     header{background: #d7000000; 
         z-index: 999;
@@ -165,11 +164,9 @@
         left: 85%;
         margin: 10% 0px 0px 0px;
     }
-
 /*  **********  MAIN  *********  */
     main{background: rgba(4, 0, 255, 0);
     }
-
 /*  **********  SECTION HOME(Topo)  *********  */
     main .home{
         background-image:
@@ -262,7 +259,6 @@
         background-color: var(--blue);
         transform: translateY(-3px);
     }
-
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
         display: flex;
@@ -382,9 +378,7 @@
 
 
 
-
-
-
+    
 /*  **********  SECTION WORKS  *********  */
     main .works{background: blue;
         display: none;
@@ -403,7 +397,6 @@
         height: 100vh;
         padding-top:100px;
     }
-
 
 
 
@@ -455,13 +448,6 @@
     main .about .container .about-img img{background-color: rgba(0, 128, 0, 0);
         width: 50%;
     }
-
-
-
-
-
-
-    
 /*  **********  SECTION CONTACTS  *********  */
     main .contacts{background: rgb(232, 232, 232);
         display: flex;
@@ -498,7 +484,6 @@
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        height: 200px;
         text-align: start;
     }
     main .contacts .ctt-links .box i{
@@ -510,12 +495,34 @@
         color: var(--blue);
         line-height: 2;
     }
-    main .contacts .iframe{background-color: green;
+    main .contacts .ctt-links .follow{
+        background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    main .contacts .ctt-links .follow i{
+        background-color: var(--orange);
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: var(--white);
+        border-radius: 10px;
+    }
+    main .contacts .ctt-links .follow i:hover{
+        background-color: var(--white);
+        color: var(--orange);
+        transform: translateY(-3px);
+        box-shadow: var(--elements-shadows);
+    }
+    main .contacts .iframe{background-color: rgba(0, 128, 0, 0.418);
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 55%;
     }
     main .contacts .iframe iframe{background-color: rgb(15, 0, 128);
         display: flex;
@@ -571,8 +578,7 @@
     footer .container .box i{
         margin: 0 10px;
         color: var(--orange);
-    }
-    
+    }    
     footer .credits{background: rgba(172, 255, 47, 0);
         width: 90%;
         margin-top: 20px;
