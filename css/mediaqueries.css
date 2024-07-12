@@ -43,7 +43,7 @@
     body{background-color: rgba(0, 128, 0, 0);    
     }
 /*  ***** HEADER *****  */
-    header{background-color: rgb(77, 1, 1);
+    header{background-color: rgba(77, 1, 1, 0);
         z-index: 999;
         position: fixed;
         top: 0;
@@ -334,7 +334,6 @@
         align-items: center;
         flex-direction: column;
         margin: auto;
-        height: 100vh;
         padding-top: 70px;
         text-align: center;
     }
@@ -350,13 +349,13 @@
 
         padding: 1rem;
     }
-    main .contacts .container .ctt-links{background-color: rgba(0, 255, 51, 0);
+    main .contacts .container .ctt-links{background-color: rgba(0, 255, 51, 0.953);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 95%;
-        height: 100%;
+        width: 50%;
+        height: 350px;
     }
     main .contacts .container .ctt-links .box{background-color: rgba(255, 0, 0, 0);
         display: flex;
@@ -377,10 +376,63 @@
         color: var(--blue);
         line-height: 2;
     }
-    main .contacts .container .iframe{background-color: #01097700;
+    main .contacts .ctt-links .follow{
+        background-color: rgba(255, 0, 0, 0);
         display: flex;
-        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
     }
+    main .contacts .ctt-links .follow i{
+        background-color: var(--orange);
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: var(--white);
+        border-radius: 10px;
+    }
+    main .contacts .ctt-links .follow i:hover{
+        background-color: var(--white);
+        color: var(--orange);
+        transform: translateY(-3px);
+        box-shadow: var(--elements-shadows);
+    }
+
+
+    main .contacts .container .form-section{background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height: 350px;
+    }
+    main .contacts .container .form-section form{
+        background-color: yellow;
+        text-align: start;
+    }
+    main .contacts .container .form-section form .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    main .contacts .iframe{background-color: #010977ef;
+        display: flex;
+        width: 100%;
+    }
+    main .contacts .iframe iframe{background-color: #01097700;
+        display: block;
+        width: 100%;
+    }
+
+
+
+
+
 /*  **********  SECTION FOOTER  *********  */
     footer{background-color: white;
         background-image: 

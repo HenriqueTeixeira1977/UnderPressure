@@ -175,7 +175,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        display: flex;
+        display: none;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
@@ -261,7 +261,7 @@
     }
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
@@ -405,12 +405,11 @@
 
 /*  **********  SECTION ABOUT US  *********  */
     main .about{background: rgba(255, 255, 0, 0);
-        display: flex;
-        justify-content: center;
+        display: none;
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        padding-top:100px;
+        padding-top:70px;
     }
     main .about h2{
         font-size: 4rem;
@@ -419,12 +418,12 @@
     }
     main .about .container{background-color: rgba(255, 0, 0, 0);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column-reverse;
         width: 95%;
-        height: 90%;
-        padding: 1rem 0;
+        height: 70%;
+        padding: 9rem 0;
     }
     main .about .container .about-txt{background-color: rgba(0, 0, 255, 0);
         height: 50%;
@@ -446,6 +445,9 @@
         border-radius: 10px;
     }
     main .about .container .about-img img{background-color: rgba(0, 128, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: 50%;
     }
 /*  **********  SECTION CONTACTS  *********  */
@@ -453,7 +455,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
         margin: auto;
         padding-top: 70px;
         text-align: center;
@@ -517,19 +518,51 @@
         transform: translateY(-3px);
         box-shadow: var(--elements-shadows);
     }
+    main .contacts .container .form-section{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+    }
+    main .contacts .container .form-section form{
+        background-color: yellow;
+        text-align: start;
+    }
+    main .contacts .container .form-section form .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
     main .contacts .iframe{background-color: rgba(0, 128, 0, 0.418);
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 55%;
+        height: 100%;
     }
     main .contacts .iframe iframe{background-color: rgb(15, 0, 128);
         display: flex;
         width: 100%;
         height: 100%;
     }
-/*  **********  SECTION FOOTER  *********  */
+
+
+
+
+
+
+
+
+
+
+    /*  **********  SECTION FOOTER  *********  */
     footer{background: white;
         background-image: 
             linear-gradient(-45deg, rgba(98, 26, 0, 0.613) 16%, rgba(0, 0, 77, 0.9) 64%),
