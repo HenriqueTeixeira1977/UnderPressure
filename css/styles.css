@@ -175,7 +175,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        display: none;
+        display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
@@ -261,7 +261,8 @@
     }
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
-        display: none;
+        /*display: none;*/
+        display: flex;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
@@ -373,12 +374,7 @@
         background: var(--green);
         color: var(--white);
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
-    }
-
-
-
-
-    
+    }    
 /*  **********  SECTION WORKS  *********  */
     main .works{background: blue;
         display: none;
@@ -397,19 +393,12 @@
         height: 100vh;
         padding-top:100px;
     }
-
-
-
-
-
-
 /*  **********  SECTION ABOUT US  *********  */
     main .about{background: rgba(255, 255, 0, 0);
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
-        padding-top:70px;
+        padding:70px 0;
     }
     main .about h2{
         font-size: 4rem;
@@ -420,10 +409,25 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 95%;
-        height: 70%;
-        padding: 9rem 0;
+        max-width: 700px;
+        height: 100%;
+        padding: 30px 0;
+        text-align: center;
+    }
+    main .about .container .about-img{background-color: rgba(0, 128, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    main .about .container .about-img img{background-color: rgba(0, 128, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
     }
     main .about .container .about-txt{background-color: rgba(0, 0, 255, 0);
         height: 50%;
@@ -435,6 +439,7 @@
         font-size: 1.3rem;
     }
     main .about .container .about-txt p{
+        font-size: 1.2rem;
         margin: 2rem 0;
     }
     main .about .container .about-txt a{
@@ -444,14 +449,9 @@
         color: var(--white);
         border-radius: 10px;
     }
-    main .about .container .about-img img{background-color: rgba(0, 128, 0, 0);
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-    }
+
 /*  **********  SECTION CONTACTS  *********  */
-    main .contacts{background: rgb(232, 232, 232);
+    main .contacts{background: rgba(255, 9, 9, 0);
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -470,7 +470,9 @@
         align-items: center;
         flex-direction: column;
         width: 95%;
+        max-width: 700px;
         height: 90%;
+        margin: 20px 0;
     }
     main .contacts .container .ctt-links{background-color: rgba(255, 255, 0, 0);
         display: flex;
@@ -479,7 +481,7 @@
         flex-direction: column;
         width: 100%;
     }
-    main .contacts .ctt-links .box{background-color: rgba(0, 255, 200, 0);
+    main .contacts .container .ctt-links .box{background-color: rgba(0, 255, 200, 0);
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -487,16 +489,16 @@
         width: 100%;
         text-align: start;
     }
-    main .contacts .ctt-links .box i{
+    main .contacts .container .ctt-links .box i{
         color: var(--orange);
     }
-    main .contacts .ctt-links .box a{
+    main .contacts .container .ctt-links .box a{
         font-size: 1;
         font-weight: 500;
         color: var(--blue);
         line-height: 2;
     }
-    main .contacts .ctt-links .follow{
+    main .contacts .container .ctt-links .follow{
         background-color: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: flex-start;
@@ -504,7 +506,7 @@
         width: 100%;
         padding: 20px 0;
     }
-    main .contacts .ctt-links .follow i{
+    main .contacts .container .ctt-links .follow i{
         background-color: var(--orange);
         margin-right: 10px;
         padding: 10px;
@@ -512,34 +514,73 @@
         color: var(--white);
         border-radius: 10px;
     }
-    main .contacts .ctt-links .follow i:hover{
+    main .contacts .container .ctt-links .follow i:hover{
         background-color: var(--white);
         color: var(--orange);
         transform: translateY(-3px);
         box-shadow: var(--elements-shadows);
     }
     main .contacts .container .form-section{
-        background-color: red;
+        background-color: rgb(224, 224, 224);
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 350px;
+        height: 600px;
+        max-width: 700px;
+        margin-bottom: 50px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.305);
     }
     main .contacts .container .form-section form{
-        background-color: yellow;
+        background-color: rgba(255, 255, 0, 0);
+        width: 100%;
         text-align: start;
     }
     main .contacts .container .form-section form .form-group{
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
     }
-
-
-
-
-
+    main .contacts .container .form-section form .form-group label{
+        margin-bottom: 5px;
+        font-size: 1rem;
+        color: rgb(147, 147, 147);
+    }
+    main .contacts .container .form-section form .form-group input{
+        height: 50px;
+        padding: 5px;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.255);
+    }
+    main .contacts .container .form-section form .form-group textarea{
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.255);
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    main .contacts .container .form-section form button{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2rem;
+        color: var(--white);
+        background-color: var(--orange);
+        border: none;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
+    }
+    main .contacts .container .form-section form button:hover{
+        background-color: rgb(211, 56, 0);
+    
+    }
     main .contacts .iframe{background-color: rgba(0, 128, 0, 0.418);
         display: flex;
         justify-content: center;
@@ -552,17 +593,7 @@
         width: 100%;
         height: 100%;
     }
-
-
-
-
-
-
-
-
-
-
-    /*  **********  SECTION FOOTER  *********  */
+/*  **********  SECTION FOOTER  *********  */
     footer{background: white;
         background-image: 
             linear-gradient(-45deg, rgba(98, 26, 0, 0.613) 16%, rgba(0, 0, 77, 0.9) 64%),
@@ -574,6 +605,7 @@
         font-size: 1rem;
         text-align: center;
         color: black;
+
     }
     footer .container{background-color: rgba(255, 0, 0, 0);
         display: flex;
