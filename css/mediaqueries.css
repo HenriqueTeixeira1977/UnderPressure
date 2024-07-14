@@ -110,7 +110,7 @@
         transition: all .2s ease;
     }
 /*  **********  MAIN  *********  */
-    main{background-color: rgb(255, 0, 0);
+    main{background-color: rgba(255, 0, 0, 0);
     }
 /*  **********  SECTION HOME(Topo)  *********  */
     main .home{background-color: rebeccapurple;
@@ -120,7 +120,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        display: flex;
+    display: none;
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -189,7 +189,7 @@
     }
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
-        display: flex;
+    display: flex;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
@@ -200,7 +200,7 @@
         align-items: center;
         flex-wrap: wrap;
         width: 97%;
-        max-width: 1500px;
+        max-width: 1300px;
 
         height: 97%;
         margin: 20px;
@@ -223,7 +223,7 @@
         /*flex-direction: column;*/
         flex-wrap: wrap;
         width: 100%;
-        max-width: 450px;
+        max-width: 400px;
         height: 350px;
         margin: 10px 5px;
         padding: 10px 5px;
@@ -304,33 +304,116 @@
         color: var(--white);
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
+
 /*  **********  SECTION WORKS  *********  */
-    main .works{background: blue;
+    main .works{background: green;
         display: none;
         height: 100vh;
         padding-top:100px;
     }
 /*  **********  SECTION GALERY  *********  */
-    main .galery{background: whitesmoke;
+    main .galery{background: yellow;
         display: none;
         height: 100vh;
         padding-top:100px;
     }
 /*  **********  SECTION REVIEWS  *********  */
-    main .reviews{background: green;
+    main .reviews{background: blue;
         display: none;
         height: 100vh;
         padding-top:100px;
     }
+
+
+
+
+
+
+
 /*  **********  SECTION ABOUT US  *********  */
-    main .about{background: yellow;
-        display: none;
-        height: 100vh;
-        padding-top:100px;
-    }
-/*  **********  SECTION CONTACTS  *********  */
-    main .contacts{background: rgb(236, 236, 236);
+    main .about{
+        background-image:
+        linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(2, 2, 255, 0.233) 64%),
+        url(../img/bghome_dsktp1.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100vh;
+    }
+    main .about h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    main .about .container{background-color: rgba(255, 0, 0, 0);
+        background-image: url(../img/bgabout_dsktp1.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 900px;
+    }
+    main .about .container .about-img{background-color: yellow;
+        width: 50%;
+        height: 50%;
+        align-items: center;
+    }
+    main .about .container .about-img img{background-color: rgb(255, 0, 251);
+        width: 10%;
+    }
+    main .about .container .about-txt{background-color: #010977;
+        width: 50%;
+        height: 90%;
+        text-align: right;
+    }
+    main .about .container .about-txt h1{
+        font-size: 2rem;
+        line-height: 0.8;
+    }
+    main .about .container .about-txt h2{
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+/*  **********  SECTION CONTACTS  *********  */
+    main .contacts{background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
@@ -346,16 +429,16 @@
         align-items: center;
         width: 90%;
         max-width: 1500px;
-
+        height: 700px;
         padding: 1rem;
     }
-    main .contacts .container .ctt-links{background-color: rgba(0, 255, 51, 0.953);
+    main .contacts .container .ctt-links{background-color: rgba(0, 255, 51, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 50%;
-        height: 350px;
+        height: 600px;
     }
     main .contacts .container .ctt-links .box{background-color: rgba(255, 0, 0, 0);
         display: flex;
@@ -376,7 +459,7 @@
         color: var(--blue);
         line-height: 2;
     }
-    main .contacts .ctt-links .follow{
+    main .contacts .container .ctt-links .follow{
         background-color: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: flex-start;
@@ -384,7 +467,7 @@
         width: 100%;
         padding: 20px 0;
     }
-    main .contacts .ctt-links .follow i{
+    main .contacts .container .ctt-links .follow i{
         background-color: var(--orange);
         margin-right: 10px;
         padding: 10px;
@@ -392,36 +475,79 @@
         color: var(--white);
         border-radius: 10px;
     }
-    main .contacts .ctt-links .follow i:hover{
+    main .contacts .container .ctt-links .follow i:hover{
         background-color: var(--white);
         color: var(--orange);
         transform: translateY(-3px);
         box-shadow: var(--elements-shadows);
     }
-
-
-    main .contacts .container .form-section{background-color: blue;
+    main .contacts .container .form-section{
+        background-color: rgb(205, 205, 205);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 50%;
-        height: 350px;
+        width: 40%;
+        height: 600px;    
+        padding: 10px 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.345);        
     }
-    main .contacts .container .form-section form{
-        background-color: yellow;
+    main .contacts .container .form-section form{background-color: rgba(0, 255, 21, 0);
+        width: 100%;
         text-align: start;
     }
-    main .contacts .container .form-section form .form-group{
+    main .contacts .container .form-section form .form-group{background-color: rgba(255, 0, 0, 0);
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
     }
-
-
+    main .contacts .container .form-section form .form-group label{
+        margin-bottom: 5px;
+        font-size: 1rem;
+        color: rgb(147, 147, 147);
+    }
+    main .contacts .container .form-section form .form-group input{
+        height: 40px;
+        padding: 10px;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.255);
+    }
+    main .contacts .container .form-section form .form-group textarea{
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.255);
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    main .contacts .container .form-section form button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2rem;
+        color: var(--white);
+        background-color: var(--orange);
+        border: none;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
+        cursor: pointer;
+    }
+    main .contacts .container .form-section form button:hover{
+        background-color: rgb(255, 80, 16);    
+    }
 
 
     main .contacts .iframe{background-color: #010977ef;
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
     main .contacts .iframe iframe{background-color: #01097700;
@@ -433,7 +559,35 @@
 
 
 
-/*  **********  SECTION FOOTER  *********  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    /*  **********  SECTION FOOTER  *********  */
     footer{background-color: white;
         background-image: 
         linear-gradient(45deg, rgba(1, 9, 77, 0.897) 30%, rgba(1, 9, 77, 0.808) 70%),
@@ -443,6 +597,8 @@
         background-position: center;
         background-attachment: fixed;
         padding: 50px 0;
+
+        display: flex;
 
     }
     footer .container {background-color: rgba(255, 0, 0, 0);
@@ -519,6 +675,10 @@
         color: var(--orange);
     }
 }
+
+
+
+
 
 @media screen and (min-width: 1366px) {
     body{background-color: red;
