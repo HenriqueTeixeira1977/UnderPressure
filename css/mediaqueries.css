@@ -120,7 +120,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-    display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -189,7 +189,7 @@
     }
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
-    display: flex;
+        display: flex;
         align-items: center;
         flex-direction: column;
         padding-top:100px;
@@ -304,7 +304,6 @@
         color: var(--white);
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
-
 /*  **********  SECTION WORKS  *********  */
     main .works{background: green;
         display: none;
@@ -323,13 +322,6 @@
         height: 100vh;
         padding-top:100px;
     }
-
-
-
-
-
-
-
 /*  **********  SECTION ABOUT US  *********  */
     main .about{
         background-image:
@@ -339,77 +331,86 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
         height: 100vh;
     }
-    main .about h2{
-        font-size: 4rem;
-        text-align: center;
-    }
-    main .about .container{background-color: rgba(255, 0, 0, 0);
-        background-image: url(../img/bgabout_dsktp1.png);
+    main .about .container{background-color: rgba(0, 8, 255, 0);
+        background-image: url(../img/bgabout_dsktp4.png);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-flow: column;
         width: 100%;
-        height: 900px;
+        height: 100vh;
+    }    
+    main .about .container h2{
+        font-size: 4rem;
+        color: var(--orange);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
-    main .about .container .about-img{background-color: yellow;
-        width: 50%;
-        height: 50%;
+    main .about .container .content {background-color: rgba(255, 255, 0, 0);
+        display: flex;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        height: 50%;
     }
-    main .about .container .about-img img{background-color: rgb(255, 0, 251);
-        width: 10%;
+    main .about .container .content .about-img img{background-color: rgba(255, 0, 251, 0);
+        width: 110%;
     }
-    main .about .container .about-txt{background-color: #010977;
-        width: 50%;
+    main .about .container .content .about-txt{background-color: rgba(1, 9, 119, 0);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-flow: column;
+        width: 70%;
         height: 90%;
         text-align: right;
+        z-index: 1;
     }
-    main .about .container .about-txt h1{
-        font-size: 2rem;
-        line-height: 0.8;
+    main .about .container .content .about-txt h1{
+        font-size: 3rem;
+        line-height: 1;        
+        text-align: right;
+        color: var(--white);
+        text-shadow: var(--texts-shadows);
     }
-    main .about .container .about-txt h2{
-        font-size: 1.2rem;
+    main .about .container .content .about-txt h2{
+        font-size: 1.5rem; 
+        line-height: 1;       
+        text-align: right;
+        color: var(--orange);
+        text-shadow: var(--texts-shadows);
     }
+    main .about .container .content .about-txt p{
+        margin: 20px 0;
+        color: var(--white);
+    }
+    main .about .container .content .about-txt a{
+        background: var(--orange);
+        padding: 0.5rem 3rem;
+        color: var(--white);
+        font-size: .9rem;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: .4s ease-in-out;
+    }
+    main .about .container .content .about-txt a:hover{
+        background: var(--green);
+        color: var(--white);
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    }    
 /*  **********  SECTION CONTACTS  *********  */
     main .contacts{background: rgb(255, 255, 255);
         display: flex;
@@ -543,7 +544,6 @@
         background-color: rgb(255, 80, 16);    
     }
 
-
     main .contacts .iframe{background-color: #010977ef;
         display: flex;
         justify-content: center;
@@ -554,40 +554,7 @@
         display: block;
         width: 100%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-    /*  **********  SECTION FOOTER  *********  */
+/*  **********  SECTION FOOTER  *********  */
     footer{background-color: white;
         background-image: 
         linear-gradient(45deg, rgba(1, 9, 77, 0.897) 30%, rgba(1, 9, 77, 0.808) 70%),
@@ -597,9 +564,6 @@
         background-position: center;
         background-attachment: fixed;
         padding: 50px 0;
-
-        display: flex;
-
     }
     footer .container {background-color: rgba(255, 0, 0, 0);
         display: flex;
