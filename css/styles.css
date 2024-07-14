@@ -388,10 +388,49 @@
         padding-top:100px;
     }
 /*  **********  SECTION REVIEWS  *********  */
-    main .reviews{background: green;
-        display: none;
-        height: 100vh;
-        padding-top:100px;
+    main .reviews{background: rgb(235, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 100%;
+        padding: 70px 0;
+    }
+    main .reviews h2{
+        font-size: 4rem;
+        color: var(--orange);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);    
+    }
+    main .reviews .container{background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 95%;
+        max-width: 1000px;
+    }
+    main .reviews .container .card{background-color: var(--white);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column;
+        width: 85%;
+        height: 350px;
+        margin: 5px;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: var(--elements-shadows);
+    }
+    main .reviews .container .card img{
+        width: 50%;
+    }
+    main .reviews .container .card p{
+        margin: 30px 0;
+        color: var(--blue);
+    }
+    main .reviews .container .card h3{
+        color: var(--orange);
     }
 /*  **********  SECTION ABOUT US  *********  */
     main .about{background: rgba(255, 255, 0, 0);
