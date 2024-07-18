@@ -40,6 +40,9 @@
     /*  ***** Shadows *****  */    
         --elements-shadows: 5px 5px 5px rgba(0, 0, 0, 0.7);
         --texts-shadows: 5px 5px 5px rgba(0, 0, 0, 0.7);
+
+        --image-comparison-slider-width: min(100vw, 468px);
+        --image-comparison-slider-handle-width: 50px;
     }    
     body{background: rgb(255, 255, 255);
     }
@@ -375,6 +378,17 @@
         color: var(--white);
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
+
+
+
+
+
+
+
+
+
+
+
 /*  **********  SECTION WORKS  *********  */
     main .works{background: rgba(255, 255, 255, 0);
         display: flex;
@@ -384,26 +398,145 @@
         height: 100vh;
         margin: auto;
         padding-top:100px;
-        text-align: center;
     }
-    main .works .container{background-color: rgba(255, 255, 0, 0);
-    display: flex;
-        width: 95%;
-        padding: 20px;
-    }
-    main .works .container .work{background-color: rgba(0, 128, 0, 0);
+    main .works .container{background-color: rgb(255, 255, 0);
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    main .works .container .image-comparison-slider{background-color: red;
+        position: relative;
+        max-width: var(--image-comparison-slider-width);
+        overflow: hidden;
+        border-radius: 0.5rem;
+        box-shadow: -7px 5px 16px 1px rgba(0, 0, 0, 0.567);     
+        cursor: col-resize;
+
+    }
+    main .works .container .image-comparison-slider img{
+        display: block;
+        width: var(--image-comparison-slider-width);
+        height: auto;
+        max-height: 80vh;
+        object-fit: cover;
+        pointer-events: none;
+        user-select: none;
+    }
+    main .works .container .image-comparison-slider .img-wrapper{background-color: rebeccapurple;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
         width: 50%;
-    }
-    main .works .container .work h3{
-        display: flex;
-        z-index: 2;
-    }
-    main .works .container .work img{
-        display: flex;
-        width: 50%;
+        overflow: hidden;
         z-index: 1;
     }
+    main .works .container .image-comparison-slider .img-wrapper img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+    main .works .container .image-comparison-slider .label{
+        position: absolute;
+        top: 1rem;
+        z-index: 3;
+        color: #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.334);
+        border-radius: 0.25rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+        text-align: center;
+        letter-spacing: 1px;
+        user-select: none;
+        opacity: 0;
+        transition: 0.25s cubic-bezier(.68,.26,.58,1.22);
+    }
+    main .works .container .image-comparison-slider:hover .label{
+        opacity: 1;
+    }
+    main .works .container .image-comparison-slider .label.label-before{
+        left: 1rem;
+    }
+    main .works .container .image-comparison-slider .label.label-after{
+        right: 1rem;
+        background-color: var(--orange);
+
+    }
+    main .works .container .image-comparison-slider .handle{
+        position: absolute;
+        top: 0;
+        left: calc(50% - var(--image-comparison-slider-handle-width)/2);
+        width: var(--image-comparison-slider-handle-width);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        z-index: 2;
+    }
+    main .works .container .image-comparison-slider .handle .handle-line{
+        width: 2px;
+        flex-grow: 1;
+        background-color: var(--white);
+    }
+    main .works .container .image-comparison-slider .handle .handle-circle{/*background-color: red;*/
+        width: var(--image-comparison-slider-handle-width);
+        height: var(--image-comparison-slider-handle-width);
+        color: var(--white);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  **********  SECTION GALERY  *********  */
     main .galery{background: whitesmoke;
         display: none;
