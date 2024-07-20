@@ -25,12 +25,12 @@ closeBtn.addEventListener("click", () => {
 });
 
 //Script para Image Comparison Slider(Before / After)
-
 VanillaTilt.init(document.querySelector("#image-comparison-slider"), { // Tilt Effect - vanilla-tilt.js (https://micku7zu.github.io/vanilla-tilt.js/) is required for this
-	max: 5, // max tilt rotation (degrees (deg))
-	speed: 800, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
-	scale: 1.02 // transform scale - 2 = 200%, 1.5 = 150%, etc..
+	max: 10, // max tilt rotation (degrees (deg))
+	speed: 9, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
+	scale: 1.12 // transform scale - 2 = 200%, 1.5 = 150%, etc..
   });
+
   
   const slider = document.querySelector("#image-comparison-slider");
   const sliderImgWrapper = document.querySelector("#image-comparison-slider .img-wrapper");
