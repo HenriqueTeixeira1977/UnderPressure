@@ -178,7 +178,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        display: none;
+        display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
@@ -265,10 +265,10 @@
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
         /*display: none;*/
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top:100px;
+        padding-top: 70px;
     }
     main .services .container{background: rgba(77, 25, 25, 0);
         display: flex;
@@ -281,7 +281,7 @@
         padding: 0px;
     }
     main .services h2{
-        font-size: 4rem;
+        font-size: 2rem;
         color: rgb(0, 0, 77);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
@@ -390,19 +390,30 @@
 
 
 /*  **********  SECTION WORKS  *********  */
-    main .works{background: rgba(152, 152, 152, 0.998);
+    main .works{background: rgba(152, 152, 152, 0);
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        padding-top:100px;
+        padding-top: 70px;
     }
-    main .works .works-txt{background-color: #0010ea;
+    main .works .works-txt{background-color: #2f2f2f00;
         width: 85%;
+        text-align: center;
         color: white;
     }
-    main .works .container{background-color: rgb(255, 255, 0);
+    main .works .works-txt h2{
+        font-size: 2rem;
+        color: rgb(0, 0, 77);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    main .works .works-txt p{background-color: rgba(255, 0, 0, 0);
+        margin-top: 10px;
+        color: #010977;
+        text-align: center;
+    }    
+    main .works .container{background-color: rgba(255, 255, 0, 0);
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
@@ -412,17 +423,25 @@
         margin: 20px 0;
         padding: 20px 0;
     }
-    main .works .container .box{background-color: rgb(0, 4, 255);
+    main .works .container .box{background-color: rgba(241, 241, 241, 0.333);
         max-width: 400px;
         margin: 5px;    
         padding: 15px;
         border-radius: 10px;
+        box-shadow: -7px 5px 16px 1px rgba(56, 86, 122, 0.6);
     }
-    main .works .container .box .works-box-txt{background-color: rgb(0, 255, 4);
+    main .works .container .box .works-box-txt{background-color: rgba(0, 255, 4, 0);
         margin-top: 20px;
         padding: 5px;
     }
-    #image-comparison-slider, #image-comparison-slider4{
+    main .works .container .box .works-box-txt p{background-color: rgba(255, 0, 0, 0);
+        margin: 10px 0;
+        color: var(--blue);
+    }
+    main .works .container .box .works-box-txt a{background-color: rgba(255, 0, 0, 0);
+        color: var(--orange);
+    }
+    #image-comparison-slider{
         position: relative;
         width: 100%;
         height: 100%;
@@ -431,7 +450,7 @@
         box-shadow: -7px 5px 16px 1px rgba(56, 86, 122, 0.6);
         cursor: col-resize;
     }
-    #image-comparison-slider img, #image-comparison-slider4 img{
+    #image-comparison-slider img{
         display: block;
         width: 100%;
         height: 100%;
@@ -440,7 +459,7 @@
         pointer-events: none;
         user-select: none;
     }
-    #image-comparison-slider .img-wrapper, #image-comparison-slider4 .img-wrapper4 {
+    #image-comparison-slider .img-wrapper{
         position: absolute;
         top: 0;
         right: 0;
@@ -451,7 +470,7 @@
         transform: translateZ(0); /* This is in order to fix a Firefox bug, related to the 3D tilt effect */
         transition: 0.25s cubic-bezier(.03,.98,.52,.99);
     }
-    #image-comparison-slider .img-wrapper img,  #image-comparison-slider4 .img-wrapper4 img{
+    #image-comparison-slider .img-wrapper img{
         position: absolute;
         top: 0;
         right: 0;
@@ -562,7 +581,7 @@
     }
 /*  **********  SECTION REVIEWS  *********  */
     main .reviews{background: rgb(235, 235, 235);
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
@@ -570,7 +589,7 @@
         padding: 70px 0;
     }
     main .reviews h2{
-        font-size: 4rem;
+        font-size: 2rem;
         color: var(--orange);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);    
     }
@@ -587,9 +606,9 @@
         justify-content: flex-start;
         align-items: center;
         flex-flow: column;
-        width: 75%;
+        width: 100%;
         max-width: 300px;
-        height: 400px;
+        height: 250px;
         margin: 5px;
         padding: 30px;
         text-align: center;
@@ -597,10 +616,10 @@
         box-shadow: var(--elements-shadows);
     }
     main .reviews .container .card img{
-        width: 50%;
+        width: 20%;
     }
     main .reviews .container .card p{
-        margin: 30px 0;
+        margin: 20px 0;
         color: var(--blue);
     }
     main .reviews .container .card h3{
@@ -608,7 +627,7 @@
     }
 /*  **********  SECTION ABOUT US  *********  */
     main .about{background: rgba(255, 255, 0, 0);
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
         padding:70px 0;
@@ -664,7 +683,7 @@
     }
 /*  **********  SECTION CONTACTS  *********  */
     main .contacts{background: rgba(255, 9, 9, 0);
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
         margin: auto;
@@ -672,7 +691,7 @@
         text-align: center;
     }
     main .contacts h2{
-        font-size: 4rem;
+        font-size: 2rem;
         color: rgb(0, 0, 77);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
@@ -817,10 +836,9 @@
         font-size: 1rem;
         text-align: center;
         color: black;
-
     }
     footer .container{background-color: rgba(255, 0, 0, 0);
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
