@@ -436,7 +436,7 @@
     }
     main .works .container .box .works-box-txt p{background-color: rgba(255, 0, 0, 0);
         margin: 10px 0;
-        color: var(--blue);
+        color: gray;
     }
     main .works .container .box .works-box-txt a{background-color: rgba(255, 0, 0, 0);
         color: var(--orange);
@@ -620,7 +620,7 @@
     }
     main .reviews .container .card p{
         margin: 20px 0;
-        color: var(--blue);
+        color: gray;
     }
     main .reviews .container .card h3{
         color: var(--orange);
