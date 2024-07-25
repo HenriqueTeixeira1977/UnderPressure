@@ -525,14 +525,50 @@
     }
 
 /*  **********  SECTION GALERY  *********  */
-    main .galery{background: whitesmoke;
-        display: none;
-        height: 100vh;
-        padding-top:100px;
+    main .galery{background: rgb(240, 240, 240);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 100%;
+        padding-top: 70px;
+    }
+    main .galery .galery-txt{background-color: rgba(255, 0, 0, 0);
+        width: 85%;
+        text-align: center;
+        color: white;
+    }
+    main .galery h2{
+        font-size: 2rem;
+        color: rgb(0, 0, 77);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    main .galery p{
+        padding: 10px 0;
+        color: gray;
+    }
+    main .galery .container{background: rgba(59, 255, 29, 0);
+        display: flex;
+    }    
+    main .galery .container .card{background: rgba(29, 48, 255, 0);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    main .galery .container .card img{background: rgba(29, 48, 255, 0);
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }    
+    main .galery .container .card img:hover{
+        transform: translateY(15px);
+        transition: .4s ease-in-out;
     }
 
+
 /*  **********  SECTION REVIEWS  *********  */
-    main .reviews{background: rgb(235, 235, 235);
+    main .reviews{background: rgba(235, 235, 235, 0);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -605,7 +641,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         max-width: 700px;
         height: 100%;
         padding: 30px 0;
@@ -651,7 +687,7 @@
         align-items: center;
         flex-direction: column;
         margin: auto;
-        padding: 70px 0;
+        padding-top: 70px;
         text-align: center;
     }
     main .contacts h2{
@@ -664,7 +700,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         max-width: 700px;
         height: 90%;
         margin: 20px 0;
@@ -773,26 +809,23 @@
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
     }
     main .contacts .container .form-section form button:hover{
-        background-color: rgb(211, 56, 0);
-    
+        background-color: rgb(211, 56, 0);    
     }    
-    main .contacts .iframe{background-color: rgba(0, 128, 0, 0);
+    main .contacts .iframe{background-color: rgba(0, 128, 0, 0.857);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 95%;
-        height: 300px;
+        width: 100%;
     }
     main .contacts .iframe iframe{background-color: rgb(15, 0, 128);
         display: flex;
         width: 100%;
-        height: 100%;
     }
 
 /*  **********  SECTION FOOTER  *********  */
-    footer{background: white;
+    footer{background: rgba(255, 6, 6, 0);
         background-image: 
-            linear-gradient(-45deg, rgba(98, 26, 0, 0.613) 16%, rgba(0, 0, 77, 0.9) 64%),
+            linear-gradient(-45deg, rgba(98, 26, 0, 0.133) 16%, rgba(0, 0, 77, 0.9) 64%),
             url(../img/bghome_dsktp2.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -808,7 +841,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         margin: auto;
-        padding: 20px 0;
+        padding: 30px 20px;
         text-align: left;
     }
     footer .container .box{background-color: rgba(0, 5, 140, 0);
@@ -840,8 +873,6 @@
         color: var(--orange);
     }    
     footer .credits{background: rgba(172, 255, 47, 0);
-        display: none;
-
         width: 90%;
         margin-top: 20px;
         margin: auto;
