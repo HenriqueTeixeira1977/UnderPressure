@@ -7,7 +7,7 @@
         list-style: none;
         line-height: 1;
         scroll-behavior: smooth;
-        transition: all .3s ease;
+        transition: all .5s ease;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     ::-webkit-scrollbar{
@@ -562,7 +562,7 @@
         object-fit: cover;
     }    
     main .galery .container .card img:hover{
-        transform: translateY(15px);
+        transform: scale(1.1);
         transition: .4s ease-in-out;
     }
 

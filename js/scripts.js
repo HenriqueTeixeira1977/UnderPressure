@@ -30,7 +30,6 @@ VanillaTilt.init(document.querySelectorAll("#image-comparison-slider"), {
 	scale: 1.02 // transform scale - 2 = 200%, 1.5 = 150%, etc..
 });
 
-
   /*  
   const slider = document.querySelector("#image-comparison-slider");
   const sliderImgWrapper = document.querySelector("#image-comparison-slider .img-wrapper");
