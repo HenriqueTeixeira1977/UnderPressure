@@ -47,7 +47,7 @@
     body{background: rgb(255, 255, 255);
     }
 /*  ***** HEADER *****  */
-    header{background: #d7000000; 
+    header{background: rgba(215, 0, 0, 0); 
         z-index: 999;
         position: fixed;
         top: 0;
@@ -173,7 +173,7 @@
 /*  **********  SECTION HOME(Topo)  *********  */
     main .home{
         background-image:
-            linear-gradient(-45deg, rgba(98, 26, 0, 0.75) 10%, rgba(0, 0, 77, 0.75) 64%),
+            linear-gradient(-45deg, rgba(98, 26, 0, 0.7) 10%, rgba(0, 0, 77, 0.7) 64%),
             url(../img/bghome_mbl.png);
         background-position: center center;
         background-size: cover;
@@ -186,6 +186,12 @@
         padding: 0 5%;
         padding-top:100px;
         height: 100vh;
+    }
+    main .home .container {background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
     }
     main .home .container img{
         width: 30%;
@@ -207,23 +213,26 @@
         text-shadow: var(--texts-shadows);
     }
     main .home .container .txt p{
-        margin: 50px 0;
-        font-size: 1.2rem;
+        margin: 20px 0;
+        margin-bottom: 50px;
+        font-size: 1.3rem;
         font-weight: 100;
-        line-height: 1.5;
+        line-height: 1.2;
         text-shadow: var(--texts-shadows);
     }
-    main .home .container .btn-talk{background: rgba(0, 0, 255, 0);
+    main .home .container .btn-home{ background-color: rgba(255, 217, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    main .home .container .btn-talk{background: rgb(0, 0, 255);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         max-width: 400px;
-        height: 70px;
         margin-top: 5px;
-        margin: auto;
         text-align: center;
-
     }
     main .home .container .btn-talk a{ background: orangered;
         width: 100%;
@@ -246,7 +255,6 @@
         max-width: 400px;
         height: 70px;
         margin-top: 5px;
-        margin: auto;
         text-align: center;
     }
     main .home .container .btn-send a{ background: orangered;
@@ -262,6 +270,7 @@
         background-color: var(--blue);
         transform: translateY(-3px);
     }
+
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
         /*display: none;*/
@@ -269,6 +278,20 @@
         align-items: center;
         flex-direction: column;
         padding-top: 70px;
+    }
+    main .services .services-txt{background-color: rgba(255, 0, 0, 0);
+        width: 90%;
+        text-align: center;
+    }
+    main .services .services-txt h2{
+        font-size: 2rem;
+        color: rgb(0, 0, 77);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    main .services .services-txt p{background-color: rgba(255, 0, 0, 0);
+        width: 90%;
+        margin-top: 10px;
+        text-align: center;
     }
     main .services .container{background: rgba(77, 25, 25, 0);
         display: flex;
@@ -279,16 +302,6 @@
         height: 97%;
         margin: 20px;
         padding: 0px;
-    }
-    main .services h2{
-        font-size: 2rem;
-        color: rgb(0, 0, 77);
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    }
-    main .services p{background-color: rgba(255, 0, 0, 0);
-        width: 90%;
-        margin-top: 10px;
-        text-align: center;
     }
     main .services .container .card{background-color: #ffffff;
         display: flex;
@@ -304,6 +317,8 @@
         position: relative;
         transition: 0.5s all ease-in-out;
         border-radius: 10px;
+        box-shadow: -7px 5px 16px 1px rgba(0, 0, 0, 0.7);
+
     }
     main .services .container .card:hover{
         transform: translateY(-10px);
@@ -413,12 +428,12 @@
         margin: 20px 0;
         padding: 20px 0;
     }
-    main .works .container .box{background-color: rgba(241, 241, 241, 0.333);
-        max-width: 400px;
+    main .works .container .box{background-color: rgb(255, 255, 255);
+        max-width: 380px;
         margin: 5px;    
         padding: 15px;
         border-radius: 10px;
-        box-shadow: -7px 5px 16px 1px rgba(56, 86, 122, 0.6);
+        box-shadow: -7px 5px 16px 1px rgba(0, 0, 0, 0.7);
     }
     main .works .container .box .works-box-txt{background-color: rgba(0, 255, 4, 0);
         margin-top: 20px;
@@ -434,16 +449,16 @@
     #image-comparison-slider{
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 70%;
         overflow: hidden;
         border-radius: 0.5rem;
-        box-shadow: -7px 5px 16px 1px rgba(56, 86, 122, 0.6);
+        box-shadow: -7px 5px 16px 1px rgba(0, 0, 0, 0.7);
         cursor: col-resize;
     }
     #image-comparison-slider img{
-        display: block;
+        display: flex;
         width: 100%;
-        height: 100%;
+        height: 50%;
         max-height: 80vh;
         object-fit: cover;
         pointer-events: none;
@@ -549,6 +564,7 @@
     }
     main .galery .container{background: rgba(59, 255, 29, 0);
         display: flex;
+        padding: 0 10px;
     }    
     main .galery .container .card{background: rgba(29, 48, 255, 0);
         display: flex;
@@ -563,12 +579,13 @@
     }    
     main .galery .container .card img:hover{
         transform: scale(1.1);
-        transition: .4s ease-in-out;
+        transition: .2s ease-in-out;
+        box-shadow: var(--elements-shadows);
+        border-radius: 5px;
     }
 
-
 /*  **********  SECTION REVIEWS  *********  */
-    main .reviews{background: rgba(235, 235, 235, 0);
+    main .reviews{background: rgba(0, 15, 149, 0.792);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -576,19 +593,19 @@
         width: 100%;
         padding: 70px 0;
     }
-    main .reviews .reviews-txt{background-color: rgba(255, 0, 0, 0);
+    main .reviews .reviews-txt{background-color: rgba(0, 17, 255, 0);
         width: 85%;
         text-align: center;
         color: white;
     }
     main .reviews .reviews-txt h2{
         font-size: 2rem;
-        color: rgb(0, 0, 77);
+        color: var(--orange);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
     main .reviews .reviews-txt p{
         margin: 10px 0;
-        color: #010977;
+        color: var(--white);
         text-align: center;
     }
     main .reviews .container{background-color: rgba(255, 0, 0, 0);
