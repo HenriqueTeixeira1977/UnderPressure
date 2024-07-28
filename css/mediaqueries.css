@@ -452,10 +452,56 @@
     }
     
 /*  **********  SECTION GALERY  *********  */
-    main .galery{background: yellow;
-        display: none;
-        height: 100vh;
+    main .galery{background: rgba(173, 255, 146, 0);
+        display: flex;
+        flex-direction: row-reverse;     
+        margin: auto;
         padding-top:100px;
+    }
+    main .galery .galery-txt{background-color: rgb(0, 20, 122);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+    }
+    main .galery .galery-txt:hover{
+        background-color: #000657;
+    }
+    main .galery .galery-txt:hover{
+        color: var(--blue);
+    }
+
+    main .galery h2{
+        font-size: 3rem;
+        color: rgb(255, 115, 0);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    main .galery p{
+        padding: 10px 0;
+        color: rgb(255, 255, 255);
+    }
+    main .galery .container{background: rgb(52, 29, 255);
+        display: flex;
+    }    
+    main .galery .container .card{background: rgba(29, 48, 255, 0);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    main .galery .container .card img{background: rgba(29, 48, 255, 0);
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }    
+    main .galery .container .card img:hover{
+        transform: scale(1.1);
+        transition: .2s ease-in-out;
+        box-shadow: var(--elements-shadows);
+        border-radius: 5px;
     }
 /*  **********  SECTION REVIEWS  *********  */
     main .reviews{background: rgb(246, 246, 246);
@@ -466,12 +512,15 @@
         width: 100%;
         padding: 70px 0;
     }
+    main .reviews .reviews-txt{
+        text-align: center;
+    }
     main .reviews h2{
         font-size: 3rem;
         color: var(--orange);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);    
     }
-    main .reviews .container{background-color: rgba(4, 0, 255, 0.389);
+    main .reviews .container{background-color: rgba(4, 0, 255, 0);
         display: flex;
         justify-content: center;
         align-items: center;
