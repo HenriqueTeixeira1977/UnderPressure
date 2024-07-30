@@ -149,7 +149,7 @@
         text-align: center;
     }
     main .home .container .txt h1{
-        font-size: 5rem;
+        font-size: 5.5rem;
         color: var(--white);
         text-shadow: var(--texts-shadows);
     }
@@ -161,14 +161,17 @@
         color: var(--white);
         text-shadow: var(--texts-shadows);
     }
+    main .home .container .txt h2 span{
+        color: var(--orange);
+    }
     main .home .container .txt p{
         margin: 20px 0;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color: var(--white);
         font-weight: 100;
         text-shadow: var(--texts-shadows);
     }
-    main .container .btn-home{background-color: rgba(255, 0, 0, 0);
+    main .home .container .btn-home{background-color: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -176,7 +179,7 @@
         width: 95%;
         height: 100%;
     }
-    main .container .btn-home .btn-talk a, .btn-send a{
+    main .home .container .btn-home .btn-talk a{
         background-color: var(--orange);
         display: flex;
         justify-content: center;
@@ -188,10 +191,67 @@
         border-radius: 5px;
         box-shadow: var(--elements-shadows);
     }
-    main .container .btn-home .btn-talk a:hover, .btn-send a:hover{
-        background-color: var(--blue);
+    main .home .container .btn-home .btn-talk a:hover{
+        background-color: var(--white);
+        color: var(--orange);
         transform: translateY(-3px);
     }
+    main .home .container .btn-home .btn-send a{
+        background-color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 50px;
+        font-size: 1.5rem;
+        color: var(--orange);
+        border-radius: 5px;
+        box-shadow: var(--elements-shadows);
+    }
+    main .home .container .btn-home .btn-send a:hover{
+        background-color: var(--orange);
+        color: var(--white);
+        transform: translateY(-3px);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
@@ -456,7 +516,7 @@
         display: flex;
         flex-direction: row-reverse;     
         margin: auto;
-        padding-top:100px;
+        padding-top:70px;
     }
     main .galery .galery-txt{background-color: rgb(0, 20, 122);
         display: flex;
@@ -473,7 +533,6 @@
     main .galery .galery-txt:hover{
         color: var(--blue);
     }
-
     main .galery h2{
         font-size: 3rem;
         color: rgb(255, 115, 0);
@@ -504,27 +563,32 @@
         border-radius: 5px;
     }
 /*  **********  SECTION REVIEWS  *********  */
-    main .reviews{background: rgb(246, 246, 246);
+    main .reviews{background: rgb(230, 97, 25);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
         width: 100%;
-        padding: 70px 0;
+        height: 100vh;
+        padding: 100px 5%;
     }
-    main .reviews .reviews-txt{
+    main .reviews .reviews-txt{background-color: rgba(255, 255, 0, 0);
+        margin-bottom: 20px;
         text-align: center;
     }
-    main .reviews h2{
+    main .reviews .reviews-txt h2{
         font-size: 3rem;
         color: var(--orange);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);    
+    }
+    main .reviews .reviews-txt p{
+        margin: 20px 0;
     }
     main .reviews .container{background-color: rgba(4, 0, 255, 0);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 85%;
+        width: 100%;
         max-width: 1000px;
     }
     main .reviews .container .card{background-color: var(--white);
@@ -564,8 +628,7 @@
         justify-content: center;
         align-items: center;
         flex-flow: column;
-        margin-top: 70px;
-        height: 100vh;
+        margin-top: 100px;
     }
     main .about .container{background-color: rgba(29, 32, 123, 0);
         background-image: url(../img/bgabout_dsktp4.png);
@@ -577,7 +640,8 @@
         align-items: center;
         flex-flow: column;
         width: 100%;
-        height: 105%;
+        height: 100vh;
+        padding: 0 5%;
     }    
     main .about .container h2{
         font-size: 3rem;
@@ -593,7 +657,7 @@
         height: 50%;
     }
     main .about .container .content .about-img img{background-color: rgba(255, 0, 251, 0);
-        width: 110%;
+        width: 100%;
     }
     main .about .container .content .about-txt{background-color: rgba(1, 9, 119, 0);
         display: flex;
