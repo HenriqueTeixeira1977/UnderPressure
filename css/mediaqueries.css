@@ -919,13 +919,39 @@
 }
 
 @media screen and (min-width: 1366px) {
-    
-    body{
-        background-color: rgb(0, 255, 21);    
+    /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Righteous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Righteous&family=Spicy+Rice&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Righteous&family=Spicy+Rice&family=Titan+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');*/
+
+    *{
+        /*font-family: "Righteous", sans-serif;*/
+    }
+    html body{
+        background-color: rgb(255, 0, 0);    
+    }
+    html body h1{
+        /*font-family: "Ringteous", sans-serif;*/
+        /*font-family: "DM Serif Text", sans-serif;        */
+        font-family: "Chicle", sans-serif;
+        color: var(--white);
+        font-weight: 100;
+        font-style: normal;
+        line-height: .7;
+
+
+    }
+    header{
+        background-color: green;
     }
     main {
         background-color: rgb(255, 255, 255);    
     }
+    main .home .container .txt h1 span{
+        font-family: "Chicle";
+    }
+
     footer{
         background-color: rgb(207, 207, 207);        
         padding-top: 100px;
