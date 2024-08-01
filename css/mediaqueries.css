@@ -919,45 +919,46 @@
 }
 
 @media screen and (min-width: 1366px) {
-    /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Righteous&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Righteous&family=Spicy+Rice&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Righteous&family=Spicy+Rice&family=Titan+One&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');*/
 
-    *{
-        /*font-family: "Righteous", sans-serif;*/
-    }
     html body{
         background-color: rgb(255, 0, 0);    
     }
     html body h1{
-        /*font-family: "Ringteous", sans-serif;*/
-        /*font-family: "DM Serif Text", sans-serif;        */
-        font-family: "Chicle", sans-serif;
+        font-family: "Shrikhand", sans-serif;
         color: var(--white);
         font-weight: 100;
         font-style: normal;
-        line-height: .7;
-
-
+        line-height: .9;
     }
     header{
-        background-color: green;
+        background-color: rgba(0, 5, 49, 0);
+        font-size: 1.2rem;
     }
     main {
         background-color: rgb(255, 255, 255);    
     }
     main .home .container .txt h1 span{
-        font-family: "Chicle";
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        line-height: .9;
     }
-
     footer{
         background-color: rgb(207, 207, 207);        
         padding-top: 100px;
     }
-    footer .container{
-        background-color: #28a71a00;
+    footer .container{background-color:rgba(0, 0, 0, 0);
+
+    }
+    footer .container .box{
+        background-color: rgba(255, 0, 0, 0);
+        max-width: 280px;
+    }
+    footer .container .box a{
+        font-size: .7rem;
+    }
+    footer .container .credits .copyright{
+        font-size: 2rem;
     }
     
 }
