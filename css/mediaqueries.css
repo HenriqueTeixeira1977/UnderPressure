@@ -917,7 +917,6 @@
         color: var(--orange);
     }
 }
-
 @media screen and (min-width: 1366px) {
 
     html body{
@@ -952,7 +951,7 @@
     }
     footer .container .box{
         background-color: rgba(255, 0, 0, 0);
-        max-width: 280px;
+        max-width: 250px;
     }
     footer .container .box a{
         font-size: .7rem;
@@ -961,4 +960,47 @@
         font-size: 2rem;
     }
     
+}
+@media screen and (min-width: 1559px) {
+
+    html body{
+        background-color: rgb(255, 0, 0);    
+    }
+    html body h1{
+        font-family: "Shrikhand", sans-serif;
+        color: var(--white);
+        font-weight: 100;
+        font-style: normal;
+        line-height: .9;
+    }
+    header{
+        background-color: rgba(0, 5, 49, 0);
+        font-size: 1.2rem;
+    }
+    main {
+        background-color: rgb(255, 255, 255);    
+    }
+    main .home .container .txt h1 span{
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        line-height: .9;
+    }
+    footer{
+        background-color: rgb(207, 207, 207);        
+        padding-top: 100px;
+    }
+    footer .container{background-color:rgba(0, 0, 0, 0);
+
+    }
+    footer .container .box{
+        background-color: rgba(255, 0, 0, 0);
+        max-width: 290px;
+    }
+    footer .container .box a{
+        font-size: 2rem;
+    }
+    footer .container .credits .copyright h3 p .dev p, a{
+        font-size: 2rem;
+    }
 }
