@@ -187,14 +187,14 @@
         padding-top:100px;
         height: 100vh;
     }
-    main .home .container {background-color: rgba(255, 0, 0, 0);
+    main .home .container {background-color: rgba(38, 0, 255, 0);
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 80vh;
+        height: 70vh;
     }
     main .home .container img{
-        width: 30%;
+        width: 40%;
     }
     main .home .container .txt{background: rgba(255, 0, 0, 0);
         padding: 5px 0;
@@ -223,8 +223,9 @@
     main .home .container .btn-home{ background-color: rgba(255, 217, 0, 0);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
+        padding: 20px 0;
     }
     main .home .container .btn-talk{background: rgba(255, 255, 255, 0);
         display: flex;
@@ -272,6 +273,28 @@
         background-color: var(--orange);
         color: var(--white);
         transform: translateY(-3px);
+    }
+    main .home .container .follow{
+        background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    main .home .container .follow i{background: white;
+        background-color: var(--orange);
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: var(--white);
+        border-radius: 5px;
+    }
+    main .home .container .follow i:hover{
+        background-color: var(--white);
+        color: var(--orange);
+        transform: translateY(-3px);
+        box-shadow: var(--elements-shadows);
     }
 
 /*  **********  SECTION SERVICES  *********  */
@@ -416,7 +439,7 @@
         color: rgb(0, 0, 77);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     }
-        main .works .works-txt p{background-color: rgba(255, 0, 0, 0);
+    main .works .works-txt p{background-color: rgba(255, 0, 0, 0);
         margin-top: 10px;
         color: #010977;
         text-align: center;
@@ -462,7 +485,7 @@
         display: flex;
         width: 100%;
         height: 50%;
-        max-height: 80vh;
+        max-height: 30vh;
         object-fit: cover;
         pointer-events: none;
         user-select: none;

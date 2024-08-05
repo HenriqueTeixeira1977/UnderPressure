@@ -1,3 +1,4 @@
+/*  ********  TABLET  *******  */
 @media screen and (min-width: 1024px) {
     *{
         margin: 0;
@@ -65,6 +66,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 30%;
+        max-width: 400px;
         height: 90%;
     }  
     header .logo a {background-color: rgba(0, 0, 255, 0);
@@ -84,6 +86,8 @@
     }
     header .logo a span{
         font-size: 1rem;
+        font-weight: 700;
+        line-height: 0.7;
         color: var(--orange);
     }
     header nav{background-color: rgba(49, 49, 49, 0);
@@ -101,7 +105,7 @@
         padding: .3rem 2rem;
         border-radius: 5px;
     }
-    header nav .button:hover{background-color: rgb(255, 98, 41);
+    header nav .button:hover{background-color: rgba(255, 98, 41, 0);
     }
     header .btn{display: none;
     
@@ -139,7 +143,7 @@
         flex-direction: column;
         width: 85%;
         max-width: 1000px;
-        height: 40%;
+        height: 100%;
     }
     main .home .container img{background-color: rgba(165, 42, 42, 0);
         display: none;
@@ -177,7 +181,7 @@
         align-items: center;
         text-align: center;
         width: 95%;
-        height: 100%;
+        height: 25%;
     }
     main .home .container .btn-home .btn-talk a{
         background-color: var(--orange);
@@ -213,6 +217,31 @@
         color: var(--white);
         transform: translateY(-3px);
     }
+    main .home .container .follow{
+        background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    main .home .container .follow i{background: white;
+        background-color: rgba(255, 68, 0, 0);
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: var(--white);
+        border-radius: 5px;
+        box-shadow: var(--elements-shadows);
+        border: solid 1px rgb(255, 255, 255);
+
+    }
+    main .home .container .follow i:hover{
+        background-color: var(--white);
+        color: var(--orange);
+        transform: translateY(-3px);
+        box-shadow: var(--elements-shadows);
+    }
     
 /*  **********  SECTION SERVICES  *********  */
     main .services{background: rgb(255, 255, 255);
@@ -221,6 +250,14 @@
         flex-direction: column;
         padding-top: 70px;
     }
+    main .services .services-txt{background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }    
     main .services .container{background: rgba(145, 145, 145, 0);
         display: flex;
         justify-content: center;
@@ -342,7 +379,7 @@
         padding-top:70px;
     }
     main .works .works-txt{background-color: #2f2f2f00;
-        width: 85%;
+        width: 50%;
         text-align: center;
         color: white;
     }
@@ -394,7 +431,7 @@
     #image-comparison-slider img{
         display: block;
         width: 100%;
-        max-height: 50vh;
+        max-height: 30vh;
         object-fit: cover;
         pointer-events: none;
         user-select: none;
@@ -475,7 +512,8 @@
 /*  **********  SECTION GALERY  *********  */
     main .galery{background: rgba(173, 255, 146, 0);
         display: flex;
-        flex-direction: row-reverse;     
+        flex-direction: row-reverse;    
+        height: 500px; 
         margin: auto;
         padding-top:70px;
     }
@@ -530,10 +568,10 @@
         align-items: center;
         flex-flow: column;
         width: 100%;
-        height: 100vh;
         padding: 100px 5%;
     }
     main .reviews .reviews-txt{background-color: rgba(255, 255, 0, 0);
+        width: 50%;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -631,7 +669,7 @@
         z-index: 1;
     }
     main .about .container .content .about-txt h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1;        
         text-align: right;
         color: var(--white);
@@ -653,6 +691,7 @@
     }
     main .about .container .content .about-txt p{
         margin: 20px 0;
+        line-height: 1.5;
         color: var(--white);
     }
     main .about .container .content .about-txt a{
@@ -673,9 +712,9 @@
         transform: translateY(-3px);
     }    
 /*  **********  SECTION CONTACTS  *********  */
-    main .contacts{background: rgba(255, 0, 0, 0);
+    main .contacts{background: rgba(4, 255, 0, 0);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         margin: auto;
@@ -683,6 +722,7 @@
         text-align: left;
     }
     main .contacts h2{background-color: #28a71a00;
+        display: none;
         width: 90%;
         font-size: 3rem;
         color: var(--orange);
@@ -690,18 +730,19 @@
     }
     main .contacts .container{ background-color: #ffe10000;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 90%;
+        width: 85%;
+        max-width: 1200px;
         margin-bottom: 50px;
     }
-    main .contacts .container .ctt-links{background-color: rgba(0, 255, 51, 0);
+    main .contacts .container .ctt-links{background-color: rgba(62, 136, 77, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 50%;
-        height: 600px;
+        height: 550px;
         border-radius: 10px;
     }
     main .contacts .container .ctt-links .box{background-color: rgba(255, 0, 0, 0);
@@ -710,9 +751,14 @@
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        height: 250px;
         padding: 50px 0; 
         text-align: start;
+    }
+    main .contacts .container .ctt-links .box h3{
+        font-size: 2rem;
+    }
+    main .contacts .container .ctt-links .box p{
+        margin: 15px 0;
     }
     main .contacts .container .ctt-links .box i{
         color: var(--orange);
@@ -737,7 +783,9 @@
         padding: 10px;
         font-size: 1.5rem;
         color: var(--white);
-        border-radius: 10px;
+        border-radius: 5px;
+        box-shadow: var(--elements-shadows);
+
     }
     main .contacts .container .ctt-links .follow i:hover{
         background-color: var(--white);
@@ -746,13 +794,13 @@
         box-shadow: var(--elements-shadows);
     }
     main .contacts .container .form-section{
-        background-color: rgb(239, 239, 239);
+        background-color: rgb(199, 199, 199);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 50%;
-        height: 600px;    
+        width: 49%;
+        height: 550px;    
         padding: 10px 20px;
         border-radius: 10px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.345);        
@@ -832,19 +880,18 @@
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        width: 90%;
+        width: 80%;
         margin: auto;
         padding: 20px 0;
-        text-align: left;
     }
     footer .container .box{background-color: rgba(0, 5, 140, 0);
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
         max-width: 350px;
-        height: 200px;
+        height: 270px;
         margin-top: 10px;
         margin: 5px;
         padding: 20px 0px;
@@ -856,7 +903,7 @@
         color: var(--white);
         margin-bottom: 20px;
     }
-    footer .container .box a{
+    footer .container .box a{background-color: rgba(192, 192, 192, 0);
         font-size: 1rem;
         line-height: 2;
         font-weight: 5;
@@ -906,7 +953,6 @@
         height: 50px;
         margin: 5px 0;
         padding: 5px;
-        font-size: 1rem;
     }
     footer .credits .dev p{
         margin: 5px;
@@ -917,97 +963,12 @@
         color: var(--orange);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*  ********  NOTEBOOK  *******  */
 
 @media screen and (min-width: 1366px) {
 
     html body{
-        background-color: rgb(255, 0, 0);    
-    }
-    html body h1{
-        font-family: "Shrikhand", sans-serif;
-        color: var(--white);
-        font-weight: 100;
-        font-style: normal;
-        line-height: .9;
-    }
-    header{
-        background-color: rgb(0, 5, 49);
-        font-size: 1rem;
-    }
-    main {
-        background-color: rgb(255, 255, 255);    
-    }
-    main .home .container .txt h1 span{
-        font-family: "Shrikhand", sans-serif;
-        font-size: 5rem;
-        font-weight: 100;
-        font-style: normal;
-        line-height: .9;
-    }
-    main .services .services-txt{background-color: rgba(255, 0, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 50%;
-        text-align: center;
-    }
-    main .services-txt
-    footer{
-        background-color: rgb(207, 207, 207);        
-        padding-top: 100px;
-    }
-    footer .container{background-color:rgba(0, 0, 0, 0);
-
-    }
-    footer .container .box{
-        background-color: rgba(255, 0, 0, 0);
-        max-width: 250px;
-    }
-    footer .container .box a{
-        font-size: .7rem;
-    }
-    footer .container .credits .copyright{
-        font-size: 2rem;
-    }
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1559px) {
-
-    html body{
-        background-color: rgb(255, 0, 0);    
+        background-color: rgba(255, 0, 0, 0);    
     }
     html body h1{
         font-family: "Shrikhand", sans-serif;
@@ -1018,10 +979,94 @@
     }
     header{
         background-color: rgba(0, 5, 49, 0);
+        padding: 0 10%;
         font-size: 1rem;
     }
     main {
         background-color: rgb(255, 255, 255);    
+    }
+    main .home .container .txt h1 {
+        font-size: 5rem
+    }
+    main .home .container .txt h1 span{
+        font-family: "Shrikhand", sans-serif;
+        font-size: 5rem;
+        font-weight: 100;
+        font-style: normal;
+        line-height: .9;
+    }
+    main .home .container .txt h2{
+        font-size: 2rem;
+    }
+    main .services .services-txt{background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }
+    main .contacts .container{background-color: rgba(255, 255, 0, 0);
+        padding: 20px;
+    }
+    main .contacts .container .ctt-links{background-color: rgba(255, 0, 0, 0);
+        height: 500px;
+    }
+    main .contacts .container .form-section{background-color: #c9c9c9;
+        width: 40%;
+        height: 500px;
+    }
+    main .contacts .container .form-section h3{
+        font-size: 1rem;
+    }
+    footer{
+        background-color: rgb(207, 207, 207);        
+        padding-top: 100px;
+    }
+    footer .container{background-color:rgba(0, 0, 0, 0);
+        width: 80%;
+    }
+    footer .container .box{background-color: rgba(255, 0, 0, 0);
+        max-width: 250px;
+    }
+    footer .container .box a{
+        font-size: 1rem;
+    }
+    footer .credits .copyright h3 {
+        font-size: 1rem;
+    }
+    footer .credits .copyright p{
+        font-size: 1rem;
+    }
+    footer .credits .dev h3 {
+        font-size: 1rem;
+    }
+    footer .credits .dev p{
+        font-size: 1rem;
+    }    
+}
+/*  ********  DESKTOP  *******  */
+
+@media screen and (min-width: 1559px) {
+
+    html body{
+        background-color: rgba(255, 0, 0, 0);    
+    }
+    html body h1{
+        font-family: "Shrikhand", sans-serif;
+        color: var(--white);
+        font-weight: 100;
+        font-style: normal;
+        line-height: .9;
+    }
+    header{
+        background-color: rgba(0, 5, 49, 0);
+        height: 100px;
+        font-size: 1rem;
+        padding: 0 10%;
+    }
+    main {
+        background-color: rgba(255, 255, 255, 0);    
     }
     main .home .container .txt h1 span{
         font-family: "Shrikhand", sans-serif;
@@ -1030,38 +1075,57 @@
         line-height: .9;
     }
     footer{
-        background-color: rgb(207, 207, 207);        
+        background-color: rgba(207, 207, 207, 0);        
         padding-top: 100px;
     }
     footer .container{background-color:rgba(0, 0, 0, 0);
-
+        width: 80%;
     }
     footer .container .box{
         background-color: rgba(255, 0, 0, 0);
         max-width: 290px;
     }
     footer .container .box a{
-        font-size: 2rem;
+        font-size: 1rem;
     }
-    footer .container .credits .copyright h3 p .dev p, a{
+    footer .container .credits .copyright h3{
         font-size: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*  ********  DESKTOP  *******  */
 
 @media screen and (min-width: 1920px) {
+    header{background-color: rgba(255, 0, 0, 0);
+        height: 120px;
+        font-size: 1.2rem;
+        font-weight: 100;
+        padding: 0 15%;
+    }
+    main .home{background-color: rgba(255, 255, 0, 0);
+        display: flex;
 
+    }
+    main .home .container{background-color: rgba(255, 255, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .home .container .txt{background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    main .services{background-color:rgba(0, 0, 255, 0);
+    }
+    main .works{background-color: rgba(255, 217, 0, 0);
+    }
+    main .galery {background-color: rgba(137, 43, 226, 0);
+    }
+    main .reviews{background-color: rgba(0, 128, 0, 0);
+    }
+    main .about{background-color: rgba(255, 0, 0, 0);
+    }
+    main .contacts{background-color: rgba(141, 141, 141, 0);
+    }
 }
