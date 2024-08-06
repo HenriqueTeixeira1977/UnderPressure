@@ -963,8 +963,9 @@
         color: var(--orange);
     }
 }
-/*  ********  NOTEBOOK  *******  */
 
+
+/*  ********  NOTEBOOK  *******  */
 @media screen and (min-width: 1366px) {
 
     html body{
@@ -1045,8 +1046,9 @@
         font-size: 1rem;
     }    
 }
-/*  ********  DESKTOP  *******  */
 
+
+/*  ********  DESKTOP  *******  */
 @media screen and (min-width: 1559px) {
 
     html body{
@@ -1092,8 +1094,9 @@
         font-size: 2rem;
     }
 }
-/*  ********  DESKTOP  *******  */
 
+
+/*  ********  DESKTOP  *******  */
 @media screen and (min-width: 1920px) {
     header{background-color: rgba(255, 0, 0, 0);
         height: 120px;
