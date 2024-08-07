@@ -1,3 +1,8 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-XXXXXXX-X');
+
 //  Script para navegação bar com efeito de on scroll - sticky 
 
 window.addEventListener("scroll", function(){
