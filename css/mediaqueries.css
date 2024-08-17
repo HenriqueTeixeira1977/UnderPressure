@@ -101,11 +101,21 @@
         color: white;
         margin-left: 1rem;
     }
-    header nav .button{background-color: var(--orange);
+    header nav a:hover {
+        color: rgb(255, 244, 240);
+        text-shadow: 0px -3px 0px rgb(255, 94, 0);
+        margin-left: 1rem;
+        border-bottom: white 1px solid;
+    }
+    header nav .botao a{background-color: var(--orange);
         padding: .3rem 2rem;
         border-radius: 5px;
     }
-    header nav .button:hover{background-color: rgba(255, 98, 41, 0);
+    header nav .botao a:hover{background-color: var(--white);
+        font-weight: 400;
+        color: var(--orange);
+        font-weight: 300;
+        border-bottom: none;
     }
     header .btn{display: none;
     
