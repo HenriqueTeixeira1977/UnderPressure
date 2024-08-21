@@ -67,6 +67,14 @@
         gtag('js', new Date());
         gtag('config', 'UA-XXXXXXX-X');
     </script>
+
+    <!--  BOOTSTRAP  - FORM  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+
 </head>
 <body>
     <header>
@@ -362,7 +370,9 @@
             </div>
           </section>
       </section>
+
 <!--  **********  SECTION CONTACTS  *********  -->
+<!--
       <section class="contacts" id="contacts">
         <h2>Contact</h2>
         <section class="container" id="container">
@@ -403,6 +413,99 @@
               <button type="submit">SUBMIT</button>
             </form>
           </div>
+        </section>
+        <div class="iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.6833579413974!2d-81.5246676237831!3d30.131872914421855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5ccc982d599a9%3A0x6c36a8ffdb0a97c0!2sGran%20Bay%20Pkwy%2C%20Jacksonville%2C%20FL%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1720558176222!5m2!1spt-BR!2sbr" width="1920" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+-->      
+<!--  **********  SECTION CONTACTS test  *********  -->
+      <section class="contacts" id="contacts">
+        <h2>Contact(NewForm)</h2>
+        <section class="container" id="container">
+          <div class="ctt-links" id="ctt-links">
+            <div class="box" id="box">
+              <h3>Contact Info</h3>
+              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus deleniti eveniet! Sit, adipisci. Veniam, vitae aperiam commodi libero veritatis corrupti laborum, molestiae quisquam sequi praesentium inventore iusto voluptas aspernatur!</P>
+              <a href="#"> <i class="fas fa-phone"></i> +1 (407) 590-4196</a>
+              <a href="#"> <i class="fas fa-phone"></i> +1 (407) 590-4196</a>
+              <a href="#"> <i class="fas fa-envelope"></i> contact@underpressureco.com</a>
+              <a href="https://maps.app.goo.gl/SZt1pJgyRnFWpo4bA"> <i class="fas fa-map"></i> 13444 Gran Bay Pkwy, APT 910-Jacksonville-FL</a>
+            </div>
+            <div class="follow" id="follow">
+              <a href="#"> <i class="fab fa-facebook"></i></a>
+              <a href="#"> <i class="fab fa-instagram"></i></a>
+              <a href="#"> <i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="form_ggl">
+            <div class="form-container">              
+              <h4 class="text-center mb-4">Form Submission to Google Sheet</h4>              
+              
+              <form id="submit-to-google-sheet">   
+
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input class="form-control" type="text" name="name" id="name" placeholder="Name" required/>
+                </div>                
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input class="form-control" type="email" name="email" id="email" placeholder="Email" required/>
+                </div>                
+                <div class="form-group">
+                  <label for="slip">Contact Number:</label>
+                  <input class="form-control" type="text" name="contact_number" id="contact_number" placeholder="Contact Number" required />
+                </div>                
+                <div class="form-group">
+                  <label for="slip">Country:</label>
+                  <input class="form-control" type="text" name="country" id="country" placeholder="Country" required />
+                </div>                
+                <div class="form-group">
+                  <label for="loc">Gender:</label>
+                  <select class="form-control" name="gender" id="gender" required>
+                    <option value="" disabled selected hidden>Choose...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>                
+                <div class="form-group">
+                  <label for="loc">Message:</label>
+                  <textarea class="form-control" name="message" id="message" placeholder="Message" required ></textarea>
+                </div>     
+                
+                
+                <div class="form-checkbox">
+                  <div class="form-group form-check mt-2" id="check-age">
+                    <input class="form-check-input" type="checkbox" id="age" />
+                    <label class="form-check-label" for="age">Check if you are over 18 years old</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" id="terms" />
+                    <label class="form-check-label" for="terms">By checking this box I certify that I am agree with the data terms and policies.</label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+              </form>      
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          
         </section>
         <div class="iframe">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.6833579413974!2d-81.5246676237831!3d30.131872914421855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5ccc982d599a9%3A0x6c36a8ffdb0a97c0!2sGran%20Bay%20Pkwy%2C%20Jacksonville%2C%20FL%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1720558176222!5m2!1spt-BR!2sbr" width="1920" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
