@@ -722,6 +722,7 @@
         transform: translateY(-3px);
     }    
 /*  **********  SECTION CONTACTS  *********  */
+  
     main .contacts{background: rgba(4, 255, 0, 0);
         display: flex;
         justify-content: space-between;
@@ -803,6 +804,10 @@
         transform: translateY(-3px);
         box-shadow: var(--elements-shadows);
     }
+
+
+
+/*
     main .contacts .container .form-section{
         background-color: rgb(199, 199, 199);
         display: flex;
@@ -864,6 +869,150 @@
     main .contacts .container .form-section form button:hover{
         background-color: rgb(255, 80, 16);    
     }
+*/
+
+
+
+/* ---------- FORM GOOGLE SHEETS ----------  */
+    main .container .form_ggl{background-color: rgba(143, 143, 143, 0);
+        width: 50%;
+    }
+    main .container .form_ggl .form-container {background-color: rgba(147, 147, 147, 0.247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+        height: 100%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.511);
+        border-radius: 10px;
+      }
+    main .container .form_ggl .form-container form{background-color: rgba(21, 255, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 98%;
+        height: 90%;
+        padding-top: 20px;
+    }
+    main .container .form_ggl .form-container form .form-group{background-color: rgba(247, 0, 255, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 98%;
+    }
+    main .container .form_ggl .form-container form .form-group label{background-color: rgba(0, 200, 255, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 25px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    main .container .form_ggl .form-container form .form-group input{background-color: rgb(255, 255, 255);
+        display: flex;
+        width: 100%;
+        height: 40px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.346);
+    }
+    main .container .form_ggl .form-container form .form-group #gender{background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 40px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.346);
+    }
+    main .container .form_ggl .form-container form .form-group #message{background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.346);
+    }
+    .check-box{background-color: rgba(128, 128, 128, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    #check-age{background-color: #0010ea00;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    #check-age .input-age{background-color: #01777300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    #check-age .input-age input{
+        width: 20px;
+        box-shadow: none;
+    }
+    #check-terms{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;    
+    }
+    #check-terms .input-terms{background-color: rgba(40, 173, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    #check-terms .input-terms input{background-color: #01777300;
+        width: 20px;
+        box-shadow: none;
+
+    }
+    #check-terms .label-txt{
+        text-align: left;
+    }
+    form button{
+        width: 90%;
+        height: 50px;
+        padding: 10px;
+        color: var(--white);
+        background-color: blue;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     main .contacts .iframe{background-color: #010977ef;
         display: flex;
         justify-content: center;
@@ -874,6 +1023,7 @@
         display: block;
         width: 100%;
     }
+    
 /*  **********  SECTION FOOTER  *********  */
     footer{background-color: white;
         background-image: 
@@ -973,8 +1123,6 @@
         color: var(--orange);
     }
 }
-
-
 /*  ********  NOTEBOOK  *******  */
 @media screen and (min-width: 1366px) {
 
@@ -1056,8 +1204,6 @@
         font-size: 1rem;
     }    
 }
-
-
 /*  ********  DESKTOP  *******  */
 @media screen and (min-width: 1559px) {
 
@@ -1104,8 +1250,6 @@
         font-size: 2rem;
     }
 }
-
-
 /*  ********  DESKTOP  *******  */
 @media screen and (min-width: 1920px) {
     header{background-color: rgba(255, 0, 0, 0);

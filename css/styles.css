@@ -794,6 +794,7 @@
         transform: translateY(-3px);
         box-shadow: var(--elements-shadows);
     }
+    
     main .contacts .container .form-section{
         background-color: rgb(205, 205, 205);
         display: flex;
