@@ -864,42 +864,24 @@
         display: flex;
         width: 100%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    main .container .form_ggl{background-color: red;
-        height: 700px;
+/* ---------- FORM GOOGLE SHEETS ----------  */
+    main .container .form_ggl{background-color: rgba(143, 143, 143, 0);
+        width: 100%;
     }
-    main .container .form_ggl .form-container {background-color: yellow;
+    main .container .form_ggl .form-container {background-color: rgba(147, 147, 147, 0.247);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         max-width: 500px;
-        height: 90%;
+        height: 100%;
         margin: auto;
         margin-top: 20px;
-        padding: px;
+        padding: 20px 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.511);
         border-radius: 10px;
       }
-    main .container .form_ggl .form-container form{background-color: rgb(21, 255, 0);
+    main .container .form_ggl .form-container form{background-color: rgba(21, 255, 0, 0);
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -915,7 +897,7 @@
         flex-direction: column;
         width: 98%;
     }
-    main .container .form_ggl .form-container form .form-group label{background-color: rgba(0, 200, 255, 0.836);
+    main .container .form_ggl .form-container form .form-group label{background-color: rgba(0, 200, 255, 0);
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -924,7 +906,7 @@
         margin-top: 10px;
         text-align: left;
     }
-    main .container .form_ggl .form-container form .form-group input{background-color: rgba(209, 209, 209, 0.806);
+    main .container .form_ggl .form-container form .form-group input{background-color: rgb(255, 255, 255);
         display: flex;
         width: 100%;
         height: 40px;
@@ -932,6 +914,7 @@
         padding: 10px;
         border: none;
         border-radius: 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.346);
     }
     main .container .form_ggl .form-container form .form-group #gender{background-color: rgb(255, 255, 255);
         width: 100%;
@@ -940,96 +923,70 @@
         padding: 10px;
         border: none;
         border-radius: 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.346);
     }
-    main .container .form_ggl .form-container form .form-group #message{background-color: rgb(0, 26, 255);
+    main .container .form_ggl .form-container form .form-group #message{background-color: rgb(255, 255, 255);
         width: 100%;
-        height: 80px;
+        height: 50px;
         margin: auto;
         padding: 10px;
         border: none;
         border-radius: 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.346);
     }
-
-
-
-    main .container .form_ggl .form-container form .form-checkbox{background-color: red;
+    .check-box{background-color: rgba(128, 128, 128, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 0;
     }
-    main .container .form_ggl .form-container form .form-checkbox .form-check-input{
-        background-color: green;
+    #check-age{background-color: #0010ea00;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
         width: 100%;
     }
+    #check-age .input-age{background-color: #01777300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    #check-age .input-age input{
+        width: 20px;
+        box-shadow: none;
+    }
+    #check-terms{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;    
+    }
+    #check-terms .input-terms{background-color: rgba(40, 173, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    #check-terms .input-terms input{background-color: #01777300;
+        width: 20px;
+        box-shadow: none;
 
-
-
-
-
-    main .container .form_ggl .form-container form .form-checkbox .form-check-label{
-        background-color: yellow;
+    }
+    #check-terms .label-txt{
+        text-align: left;
+    }
+    form button{
         width: 90%;
+        height: 50px;
+        padding: 10px;
+        color: var(--white);
+        background-color: blue;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
     }
-    .form-group form-check mt-2{}
-    #age{
-        width: 10%;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  **********  SECTION FOOTER  *********  */
     footer{background: rgba(255, 6, 6, 0);
         background-image: 
