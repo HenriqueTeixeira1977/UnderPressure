@@ -298,15 +298,18 @@
     }
 
 /*  **********  SECTION SERVICES  *********  */
-    main .services{background: rgb(255, 255, 255);
+    main .services{background: rgba(255, 0, 0, 0);
         /*display: none;*/
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin: auto;
+
         padding-top: 70px;
     }
-    main .services .services-txt{background-color: rgba(255, 0, 0, 0);
+    main .services .services-txt{background-color: rgba(255, 255, 255, 0.802);
         width: 90%;
+        padding: 10px 0;
         text-align: center;
     }
     main .services .services-txt h2{
@@ -317,6 +320,14 @@
     main .services .services-txt p{background-color: rgba(255, 0, 0, 0);
         width: 90%;
         margin-top: 10px;
+        margin: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    main .services .services-txt span{background-color: rgba(26, 255, 0, 0);
+        width: 90%;
+        margin-top: 20px;
+        margin: auto;
         text-align: center;
     }
     main .services .container{background: rgba(77, 25, 25, 0);
@@ -725,7 +736,7 @@
     }
 
 /*  **********  SECTION CONTACTS  *********  */
-    main .contacts{background: rgba(255, 9, 9, 0);
+    main .contacts{background: rgba(234, 9, 255, 0);
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -733,7 +744,7 @@
         padding-top: 70px;
         text-align: center;
     }
-    main .contacts h2{
+    main .contacts h2{background-color: rgba(0, 128, 0, 0);
         font-size: 2rem;
         color: rgb(0, 0, 77);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -755,7 +766,7 @@
         flex-direction: column;
         width: 100%;
     }
-    main .contacts .container .ctt-links .box{background-color: rgba(0, 255, 200, 0);
+    main .contacts .container .ctt-links .box{background-color: rgba(0, 30, 255, 0);
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -763,8 +774,11 @@
         width: 100%;
         text-align: start;
     }
-    main .contacts .container .ctt-links .box i{
+    main .contacts .container .ctt-links .box i{background-color: rgba(255, 166, 0, 0);
         color: var(--orange);
+    }
+    main .contacts .container .ctt-links .box P{background-color: rgba(102, 51, 153, 0);
+        padding: 10px 0;
     }
     main .contacts .container .ctt-links .box a{
         font-size: 1;
